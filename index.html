@@ -3,147 +3,169 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NMY — Software Development Team</title>
-<meta name="description" content="NMY is a team of developers building websites, Telegram bots, crypto exchanges (DEX & CEX) and fintech payment systems since 2014.">
-<meta name="author" content="NMY">
-<meta property="og:title" content="NMY — Software Development Team">
+<title>NMY Agency — Websites, Telegram Bots, Crypto & Fintech Development</title>
+<meta name="description" content="NMY Agency builds websites, Telegram bots, crypto exchanges (DEX & CEX) and fintech payment systems with SEPA. One senior team, building together since 2014.">
+<meta name="author" content="NMY Agency">
+<meta property="og:title" content="NMY Agency — Software that just works">
 <meta property="og:description" content="Websites, Telegram bots, crypto exchanges and fintech payment systems. Building together since 2014.">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="NMY">
+<meta property="og:site_name" content="NMY Agency">
+<meta property="og:image" content="img/alphalox.jpg">
 <meta property="og:locale" content="en_US">
-<meta name="twitter:card" content="summary">
-<meta name="theme-color" content="#0a0d16">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='6' fill='%230a0d16'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='Arial,sans-serif' font-size='22' font-weight='700' fill='%23f6f7fb'%3ENMY%3C/text%3E%3Crect x='12' y='47' width='40' height='3' fill='%234b6bff'/%3E%3C/svg%3E">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Arial Black,Arial,sans-serif' font-size='34' font-weight='900' fill='%23ff1a1a'%3EN%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:oklch(9.5% .012 262);
-  --fg:oklch(98.5% .004 260);
-  --muted:oklch(69% .025 262);
-  --accent:oklch(61% .23 265);
-  --accent-2:oklch(78% .14 266);
-  --surface:oklch(12.5% .027 267);
-  --border:oklch(98.5% .004 260 / .12);
-  --font:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --bg:#000;
+  --fg:#fff;
+  --red:#ff1a1a;
+  --red-2:#cc0000;
+  --muted:#a6a6a6;
+  --border:#262626;
+  --card:#0d0d0d;
+  --head:"Montserrat",system-ui,sans-serif;
+  --body:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
 }
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:inherit;text-decoration:none}
-:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+img{display:block;max-width:100%}
+:focus-visible{outline:2px solid var(--red);outline-offset:3px}
 h1,h2,h3,p{margin:0}
-.container{width:100%;max-width:1280px;margin:0 auto;padding:0 16px}
-@media (min-width:768px){.container{padding:0 32px}}
-section{border-bottom:1px solid var(--border)}
-.label{font-size:10px;text-transform:uppercase;letter-spacing:.3em;color:var(--accent)}
-.meta{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
-.title{margin-top:12px;font-size:clamp(2.25rem,5vw,3rem);font-weight:500;text-transform:uppercase;line-height:1.05}
+.wrap{width:100%;max-width:1440px;margin:0 auto;padding-inline:16px}
+@media (min-width:768px){.wrap{padding-inline:40px}}
 .muted{color:var(--muted)}
+.red{color:var(--red)}
+.ico{width:14px;height:14px;flex:none}
 
 /* buttons */
-.btn{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 28px;border-radius:3px;font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.18em;white-space:nowrap;transition:background .15s,border-color .15s,color .15s}
-.btn-solid{background:var(--fg);color:var(--bg)}
-.btn-solid:hover{background:var(--accent-2)}
-.btn-ghost{border:1px solid var(--border);color:var(--fg)}
-.btn-ghost:hover{border-color:var(--accent);color:var(--accent-2)}
-.btn svg{width:16px;height:16px}
+.btn{display:inline-flex;align-items:center;gap:10px;height:40px;padding:0 16px;border-radius:8px;font-size:15px;font-weight:500;white-space:nowrap;transition:background .2s,box-shadow .2s,color .2s,border-color .2s}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-2);box-shadow:0 0 28px rgb(255 26 26 / .45)}
+.btn-line{color:#fff;border:1px solid transparent}
+.btn-line:hover{color:var(--red)}
+.btn-out{border:1px solid var(--border)}
+.btn-out:hover{border-color:var(--red);color:var(--red)}
 
 /* header */
-header{position:sticky;top:0;z-index:10;background:oklch(9.5% .012 262 / .85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:24px}
-.logo{font-size:22px;font-weight:700;letter-spacing:.04em}
-.logo span{color:var(--accent)}
-.nav-links{display:none;gap:28px}
-.nav-link{font-size:11px;text-transform:uppercase;letter-spacing:.18em;color:var(--muted);transition:color .15s}
-.nav-link:hover{color:var(--fg)}
-@media (min-width:900px){.nav-links{display:flex}}
+header{position:sticky;top:0;z-index:20;background:rgb(0 0 0 / .85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:84px;gap:24px}
+.logo{display:flex;flex-direction:column;align-items:center;line-height:1;font-family:var(--head);font-weight:900}
+.logo b{font-size:26px;letter-spacing:.02em}
+.logo small{font-size:7px;font-weight:800;letter-spacing:.35em;margin-top:2px}
+.links{display:none;gap:28px;font-size:15px}
+.links a:hover{color:var(--red)}
+@media (min-width:960px){.links{display:flex}}
 
 /* hero */
-.hero{position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse at 60% 40%,#000 20%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse at 60% 40%,#000 20%,transparent 75%);opacity:.5}
-.hero::after{content:"";position:absolute;width:70vw;height:70vw;max-width:900px;max-height:900px;right:-15vw;top:-20vw;background:radial-gradient(circle,oklch(61% .23 265 / .28),transparent 65%);pointer-events:none;animation:drift 14s ease-in-out infinite alternate}
-@keyframes drift{to{transform:translate(-6vw,8vw)}}
-.hero-inner{position:relative;z-index:1;display:flex;flex-direction:column;justify-content:space-between;min-height:calc(100svh - 68px);padding-block:40px}
-@media (min-width:768px){.hero-inner{min-height:760px;padding-block:56px}}
-.hero-top{display:flex;justify-content:space-between;gap:16px}
-.hero-top .meta{display:none}
-@media (min-width:768px){.hero-top .meta{display:block}}
-.hero-mid{padding:56px 0;animation:rise .8s ease-out both}
-@keyframes rise{from{opacity:0;transform:translateY(24px)}}
-.hero-mid p{margin-bottom:20px;font-size:14px;font-weight:500;text-transform:uppercase}
-.wordmark{font-size:clamp(6rem,24vw,16rem);font-weight:500;line-height:.85;letter-spacing:-.02em}
-.wordmark span{color:var(--accent)}
-.hero-bottom{display:grid;gap:32px;padding-top:32px;border-top:1px solid var(--border)}
-.hero-bottom h2{max-width:36rem;font-size:clamp(1.875rem,3.5vw,2.25rem);font-weight:500;line-height:1.2}
-.hero-bottom .lead{max-width:36rem}
-.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-@media (min-width:768px){.hero-bottom{grid-template-columns:1fr 1fr}.hero-bottom .lead{justify-self:end}}
+.hero-meta{display:flex;justify-content:space-between;gap:16px;padding-top:48px;font-size:12px;font-weight:500;text-transform:uppercase;color:#d4d4d4}
+.hero-meta span:last-child{display:none}
+@media (min-width:768px){.hero-meta span:last-child{display:block}}
+.wordmark{margin-top:48px;font-family:var(--head);font-weight:900;font-size:clamp(3.4rem,11vw,9.5rem);line-height:.9;letter-spacing:-.01em;animation:up .7s ease-out both}
+.tagline{margin-top:36px;font-family:var(--head);font-weight:800;font-size:clamp(1.6rem,3.4vw,2.9rem);line-height:1.15;animation:up .7s .1s ease-out both}
+.tagline s{color:#6b6b6b;text-decoration-color:var(--red);text-decoration-thickness:3px}
+@keyframes up{from{opacity:0;transform:translateY(20px)}}
+.hero-row{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:28px;margin-top:44px}
+.hero-row p{max-width:30rem;font-size:17px;line-height:1.6}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
 
-/* generic section */
-.block{padding-block:80px}
-@media (min-width:768px){.block{padding-block:112px}}
-.block-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px}
+.shots{display:grid;grid-auto-flow:column;grid-auto-columns:85%;gap:10px;margin-top:44px;padding-inline:10px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+.shots::-webkit-scrollbar{display:none}
+@media (min-width:768px){.shots{grid-auto-flow:row;grid-template-columns:repeat(3,1fr);overflow:visible}}
+.shot{position:relative;display:block;aspect-ratio:16/9.3;overflow:hidden;scroll-snap-align:start;background:var(--card)}
+.shot img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .6s}
+.shot:hover img{transform:scale(1.04)}
+.shot span{position:absolute;left:14px;right:14px;bottom:12px;display:flex;justify-content:space-between;align-items:center;padding:10px 14px;background:rgb(20 20 20 / .88);backdrop-filter:blur(8px);border:1px solid rgb(255 255 255 / .08);font-size:14px}
+.hero-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-block:22px;border-bottom:1px solid var(--border);font-size:13px;color:var(--muted)}
+.hero-foot span{display:flex;align-items:center;gap:8px}
+.hero-foot a:hover{color:#fff}
+
+/* sections */
+.sec{padding-block:96px;border-bottom:1px solid var(--border)}
+@media (min-width:768px){.sec{padding-block:128px}}
+.sec-head{display:grid;gap:20px}
+@media (min-width:960px){.sec-head{grid-template-columns:362px 1fr}}
+.kicker{display:flex;gap:12px;padding-top:14px;font-size:12px;font-weight:500;text-transform:uppercase}
+.kicker b{color:var(--red);font-weight:500}
+.sec-head h2{font-family:var(--head);font-weight:800;font-size:clamp(2rem,4.2vw,3.25rem);line-height:1.12}
+.sec-head p{max-width:36rem;margin-top:20px;font-size:17px}
 
 /* services */
-.rows{margin-top:48px;border-top:1px solid var(--border)}
-.row{display:grid;gap:12px;padding:28px 0;border-bottom:1px solid var(--border);transition:background .15s}
-.row:hover{background:var(--surface)}
-.row .num{font-size:12px;color:var(--accent)}
-.row h3{font-size:clamp(1.75rem,3.5vw,2.25rem);font-weight:500;text-transform:uppercase;line-height:1.1}
-.row .arrow{display:none;color:var(--muted);transition:transform .15s,color .15s}
-.row:hover .arrow{color:var(--accent-2);transform:translateX(4px)}
-@media (min-width:768px){.row{grid-template-columns:80px 1fr 1fr auto;align-items:center;padding:28px 16px}.row .arrow{display:block}}
+.svc{margin-top:56px;border-top:1px solid var(--border)}
+.svc-row{display:grid;gap:14px;padding-block:36px;border-bottom:1px solid var(--border)}
+.svc-row .n{font-size:13px;color:var(--red)}
+.svc-row h3{font-family:var(--head);font-weight:700;font-size:clamp(1.5rem,2.4vw,1.9rem);line-height:1.2}
+.tags{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:18px;font-size:13px;font-weight:500}
+.tags span{display:flex;align-items:center;gap:8px}
+.tags span::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--red)}
+@media (min-width:960px){.svc-row{grid-template-columns:80px 1fr 1.25fr;gap:0 0}}
 
 /* work */
-.cards{display:grid;gap:1px;margin-top:48px;background:var(--border);border:1px solid var(--border)}
-@media (min-width:768px){.cards{grid-template-columns:1fr 1fr}}
-.card{display:flex;flex-direction:column;justify-content:space-between;gap:48px;min-height:240px;padding:28px;background:var(--bg);transition:background .15s}
-.card:hover{background:var(--surface)}
-.card h3{margin-top:12px;font-size:clamp(1.75rem,3vw,2.25rem);font-weight:500}
-.card .go{display:flex;justify-content:space-between;align-items:center;font-size:11px;text-transform:uppercase;letter-spacing:.18em;color:var(--muted)}
-.card:hover .go{color:var(--accent-2)}
-.note{margin-top:20px;font-size:13px}
+.grid{display:grid;gap:44px 24px;margin-top:56px}
+@media (min-width:768px){.grid{grid-template-columns:1fr 1fr}}
+.case .pic{aspect-ratio:16/9.3;overflow:hidden;background:var(--card)}
+.case .pic img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .6s}
+.case:hover .pic img{transform:scale(1.04)}
+.case .type{display:block;margin-top:22px;font-size:13px;color:var(--muted)}
+.case h3{margin-top:10px;font-family:var(--head);font-weight:700;font-size:clamp(1.4rem,2.2vw,1.75rem);line-height:1.2}
+.case p{margin-top:12px}
+.case .hl{margin-top:10px;font-size:14px;color:var(--red)}
+.pic.blank{display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 30% 20%,rgb(255 26 26 / .35),transparent 55%),linear-gradient(135deg,#141414,#050505);border:1px solid var(--border)}
+.pic.blank b{font-family:var(--head);font-weight:900;font-size:clamp(2.5rem,6vw,4.5rem);letter-spacing:-.02em}
 
-/* about */
-.about{display:grid;gap:40px;margin-top:48px}
-.about p{font-size:clamp(1.25rem,2.4vw,1.625rem);line-height:1.45}
-.facts{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--border)}
-.fact{padding:24px 0;border-bottom:1px solid var(--border)}
-.fact strong{display:block;font-size:clamp(2.5rem,5vw,3.75rem);font-weight:500;line-height:1}
-.fact span{display:block;margin-top:8px;font-size:13px;color:var(--muted)}
-@media (min-width:900px){.about{grid-template-columns:1.4fr 1fr;align-items:start}}
+/* approach */
+.approach{display:grid;gap:48px;margin-top:56px}
+@media (min-width:960px){.approach{grid-template-columns:1fr 1.15fr;gap:80px}}
+.badge{position:relative;display:flex;flex-direction:column;justify-content:space-between;min-height:420px;padding:36px;overflow:hidden;background:linear-gradient(160deg,#151515,#050505);border:1px solid var(--border)}
+.badge::before{content:"";position:absolute;width:420px;height:420px;right:-140px;top:-140px;background:radial-gradient(circle,rgb(255 26 26 / .45),transparent 65%);animation:glow 6s ease-in-out infinite alternate}
+@keyframes glow{to{opacity:.45;transform:scale(1.15)}}
+.badge b{position:relative;font-family:var(--head);font-weight:900;font-size:clamp(5rem,12vw,9rem);line-height:.9}
+.badge p{position:relative;max-width:22rem;font-size:15px}
+.lead-q{font-size:clamp(1.3rem,2.2vw,1.75rem);line-height:1.45}
+.points{margin-top:36px;border-top:1px solid var(--border)}
+.point{display:grid;grid-template-columns:34px 1fr;padding-block:26px;border-bottom:1px solid var(--border)}
+.point .n{font-size:12px;color:var(--red);padding-top:6px}
+.point h3{font-family:var(--head);font-weight:700;font-size:19px}
+.point p{margin-top:10px;font-size:14px}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:32px;margin-top:72px}
+@media (min-width:768px){.stats{grid-template-columns:repeat(4,1fr)}}
+.stats b{display:block;font-family:var(--head);font-weight:800;font-size:clamp(2.4rem,4.5vw,3.6rem);line-height:1}
+.stats span{display:block;margin-top:12px;font-size:13px;color:var(--muted)}
 
 /* process */
-.steps{display:grid;gap:1px;margin-top:48px;background:var(--border);border:1px solid var(--border)}
+.steps{display:grid;gap:16px;margin-top:56px}
 @media (min-width:640px){.steps{grid-template-columns:1fr 1fr}}
-@media (min-width:1024px){.steps{grid-template-columns:repeat(4,1fr)}}
-.step{padding:28px;background:var(--bg)}
-.step .num{font-size:12px;color:var(--accent)}
-.step h3{margin:48px 0 12px;font-size:24px;font-weight:500;text-transform:uppercase}
-.step p{font-size:14px;color:var(--muted)}
+@media (min-width:1100px){.steps{grid-template-columns:repeat(4,1fr)}}
+.step{padding:28px;background:var(--card);border:1px solid var(--border);border-radius:12px;transition:border-color .2s}
+.step:hover{border-color:var(--red)}
+.step .n{font-family:var(--head);font-weight:900;font-size:44px;color:var(--red);line-height:1}
+.step h3{margin-top:36px;font-family:var(--head);font-weight:700;font-size:21px}
+.step p{margin-top:10px;font-size:14px}
 
 /* stack */
-.stack{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;margin-top:48px;background:var(--border);border:1px solid var(--border)}
-@media (min-width:640px){.stack{grid-template-columns:repeat(3,1fr)}}
-@media (min-width:1024px){.stack{grid-template-columns:repeat(6,1fr)}}
-.tech{display:flex;flex-direction:column;gap:20px;padding:22px;background:var(--bg)}
-.tech b{font-size:22px;font-weight:600;color:var(--accent-2)}
-.tech span{font-size:13px;color:var(--muted)}
+.marquee{margin-top:56px;overflow:hidden;border-block:1px solid var(--border);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.track{display:flex;width:max-content;animation:marquee 32s linear infinite}
+.track span{display:flex;align-items:center;gap:36px;padding:28px 18px;font-family:var(--head);font-weight:800;font-size:clamp(1.5rem,3vw,2.4rem);white-space:nowrap}
+.track span::after{content:"";width:10px;height:10px;border-radius:50%;background:var(--red)}
+@keyframes marquee{to{transform:translateX(-50%)}}
 
 /* contact */
-.cta{display:grid;gap:40px}
-.cta h2{margin-top:12px;font-size:clamp(2.5rem,7vw,5.5rem);font-weight:500;text-transform:uppercase;line-height:.95}
-.cta .lead{margin-top:24px;max-width:36rem}
-.channels{border-top:1px solid var(--border)}
-.channel{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;border-bottom:1px solid var(--border);transition:color .15s}
-.channel:hover{color:var(--accent-2)}
-.channel .meta{min-width:88px}
-.channel strong{font-size:clamp(1rem,2vw,1.25rem);font-weight:500;text-align:right;overflow-wrap:anywhere}
-@media (min-width:900px){.cta{grid-template-columns:1.2fr 1fr;align-items:end}}
+.cta{display:grid;gap:56px}
+@media (min-width:960px){.cta{grid-template-columns:1.2fr 1fr;align-items:end}}
+.cta h2{margin-top:20px;font-family:var(--head);font-weight:900;font-size:clamp(2.6rem,6.5vw,5.6rem);line-height:1}
+.cta .lead{max-width:34rem;margin-top:24px;font-size:17px}
+.ch{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:22px;border-bottom:1px solid var(--border);transition:color .2s}
+.ch:first-child{border-top:1px solid var(--border)}
+.ch:hover{color:var(--red)}
+.ch span{font-size:12px;text-transform:uppercase;color:var(--muted)}
+.ch strong{font-family:var(--head);font-weight:700;font-size:clamp(1rem,2vw,1.35rem);text-align:right;overflow-wrap:anywhere}
 
-footer .container{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:28px;padding-bottom:28px}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;padding-block:36px;font-size:13px;color:var(--muted)}
 
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -154,189 +176,211 @@ footer .container{display:flex;flex-wrap:wrap;justify-content:space-between;gap:
 <body>
 
 <header>
-  <nav class="container nav" aria-label="Main">
-    <a href="#top" class="logo" aria-label="NMY home">NMY<span>.</span></a>
-    <div class="nav-links">
-      <a class="nav-link" href="#services">Services</a>
-      <a class="nav-link" href="#work">Work</a>
-      <a class="nav-link" href="#about">About</a>
-      <a class="nav-link" href="#process">Process</a>
-      <a class="nav-link" href="#stack">Stack</a>
+  <nav class="wrap nav" aria-label="Main">
+    <a href="#top" class="logo" aria-label="NMY Agency home"><b><span class="red">N</span>MY</b><small>AGENCY</small></a>
+    <div class="links">
+      <a href="#services">Services</a>
+      <a href="#work">Portfolio</a>
+      <a href="#approach">About</a>
+      <a href="#process">Process</a>
+      <a href="#stack">Stack</a>
     </div>
-    <a class="btn btn-ghost" href="#contact">Get in touch</a>
+    <a class="btn btn-red" href="#contact">Contact us
+      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+    </a>
   </nav>
 </header>
 
 <main id="top">
 
-<section class="hero">
-  <div class="container hero-inner">
-    <div class="hero-top">
-      <p class="label">Software development team</p>
-      <span class="meta">Since 2014 · Worldwide</span>
-    </div>
-    <div class="hero-mid">
-      <p>Engineering products that run real money and real users</p>
-      <h1 class="wordmark">NMY<span>.</span></h1>
-    </div>
-    <div class="hero-bottom">
-      <h2>From idea to production — built by people who ship.</h2>
-      <div class="lead">
-        <p class="muted">We build websites, Telegram bots, crypto exchanges and fintech payment systems — designed, coded and launched by one senior team that has worked together since 2014.</p>
-        <div class="btns">
-          <a class="btn btn-solid" href="#contact">Start a project
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-          </a>
-          <a class="btn btn-ghost" href="#work">See our work</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="services">
-  <div class="container block">
-    <div class="block-head">
-      <div>
-        <p class="label">01 / Services</p>
-        <h2 class="title">What we build</h2>
-      </div>
-      <a class="nav-link" href="#contact">Discuss yours →</a>
-    </div>
-    <div class="rows">
-      <a class="row" href="#contact">
-        <span class="num">01</span>
-        <h3>Websites</h3>
-        <p class="muted">Fast, clean websites and web apps — from landing pages to full platforms</p>
-        <span class="arrow" aria-hidden="true">→</span>
-      </a>
-      <a class="row" href="#contact">
-        <span class="num">02</span>
-        <h3>Telegram Bots</h3>
-        <p class="muted">Bots and Mini Apps for sales, support, payments and automation</p>
-        <span class="arrow" aria-hidden="true">→</span>
-      </a>
-      <a class="row" href="#contact">
-        <span class="num">03</span>
-        <h3>Crypto Exchanges</h3>
-        <p class="muted">DEX and CEX platforms — trading engines, wallets and smart contracts</p>
-        <span class="arrow" aria-hidden="true">→</span>
-      </a>
-      <a class="row" href="#contact">
-        <span class="num">04</span>
-        <h3>Fintech &amp; Payments</h3>
-        <p class="muted">Payment systems, SEPA transfers and secure financial integrations</p>
-        <span class="arrow" aria-hidden="true">→</span>
-      </a>
-    </div>
-  </div>
-</section>
-
-<section id="work">
-  <div class="container block">
-    <div class="block-head">
-      <div>
-        <p class="label">02 / Work</p>
-        <h2 class="title">Selected projects</h2>
-      </div>
-    </div>
-    <div class="cards">
-      <a class="card" href="https://www.linkedin.com/company/acmcryptosimplified/" target="_blank" rel="noopener">
-        <div><p class="label">Crypto platform</p><h3>ACM Crypto Simplified</h3></div>
-        <span class="go">View project <span aria-hidden="true">↗</span></span>
-      </a>
-      <a class="card" href="https://swag.com/" target="_blank" rel="noopener">
-        <div><p class="label">E-commerce</p><h3>Swag.com</h3></div>
-        <span class="go">View project <span aria-hidden="true">↗</span></span>
-      </a>
-      <a class="card" href="https://bober.tr/" target="_blank" rel="noopener">
-        <div><p class="label">Barbershop CRM</p><h3>Bober</h3></div>
-        <span class="go">View project <span aria-hidden="true">↗</span></span>
-      </a>
-      <a class="card" href="https://getcaptions.io/" target="_blank" rel="noopener">
-        <div><p class="label">AI video captions</p><h3>GetCaptions</h3></div>
-        <span class="go">View project <span aria-hidden="true">↗</span></span>
-      </a>
-    </div>
-    <p class="note muted">Detailed case studies are coming soon.</p>
-  </div>
-</section>
-
-<section id="about">
-  <div class="container block">
-    <p class="label">03 / About</p>
-    <h2 class="title">People behind NMY</h2>
-    <div class="about">
-      <div>
-        <p>NMY is a team of developers who have been building software together since 2014. The name comes from our founder, <a href="https://www.linkedin.com/in/ivan-nemyrovskiy-05b323224/" target="_blank" rel="noopener" style="color:var(--accent-2)">Ivan Nemyrovskyi</a>.</p>
-        <p class="muted" style="margin-top:20px;font-size:1rem">We work as one small senior team: the people you talk to are the people who write your code. No hand-offs, no hidden subcontractors — just direct communication and products that keep working after launch.</p>
-        <div class="btns">
-          <a class="btn btn-ghost" href="https://www.linkedin.com/in/ivan-nemyrovskiy-05b323224/" target="_blank" rel="noopener">Founder on LinkedIn ↗</a>
-        </div>
-      </div>
-      <div class="facts">
-        <div class="fact"><strong>2014</strong><span>building together since</span></div>
-        <div class="fact"><strong>4</strong><span>core directions</span></div>
-        <div class="fact"><strong>1</strong><span>team, start to finish</span></div>
-        <div class="fact"><strong>Remote</strong><span>working worldwide</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="process">
-  <div class="container block">
-    <p class="label">04 / Process</p>
-    <h2 class="title">From idea to launch</h2>
-    <div class="steps">
-      <div class="step"><span class="num">01</span><h3>Discovery</h3><p>We dig into your goals, users and constraints, and agree on what success means.</p></div>
-      <div class="step"><span class="num">02</span><h3>Design</h3><p>We map the flows, the interface and the architecture before writing code.</p></div>
-      <div class="step"><span class="num">03</span><h3>Build</h3><p>We develop in short iterations and show you working software every step.</p></div>
-      <div class="step"><span class="num">04</span><h3>Scale</h3><p>We launch, monitor and keep improving the product as it grows.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="stack">
-  <div class="container block">
-    <p class="label">05 / Stack</p>
-    <h2 class="title">Technologies we use</h2>
-    <div class="stack">
-      <div class="tech"><b>Py</b><span>Python</span></div>
-      <div class="tech"><b>JS</b><span>JavaScript</span></div>
-      <div class="tech"><b>PHP</b><span>PHP</span></div>
-      <div class="tech"><b>SQL</b><span>MySQL</span></div>
-      <div class="tech"><b>Re</b><span>React</span></div>
-      <div class="tech"><b>Dj</b><span>Django</span></div>
-      <div class="tech"><b>Node</b><span>Node.js</span></div>
-      <div class="tech"><b>La</b><span>Laravel</span></div>
-      <div class="tech"><b>Sf</b><span>Symfony</span></div>
-      <div class="tech"><b>Mg</b><span>Magento</span></div>
-      <div class="tech"><b>Vue</b><span>Vue.js</span></div>
-      <div class="tech"><b>+</b><span>and more</span></div>
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="container block cta">
-    <div>
-      <p class="label">Next step</p>
-      <h2>Let’s talk about your project</h2>
-      <p class="lead muted">Tell us what you want to build — we’ll come back with a plan, an estimate and clear next steps.</p>
+<section aria-label="Intro">
+  <div class="wrap">
+    <div class="hero-meta"><span>Remote team / Working worldwide</span><span>Web · Bots · Crypto · Fintech</span></div>
+    <h1 class="wordmark"><span class="red">N</span>MY<span class="red">.</span> AGENCY</h1>
+    <p class="tagline">Software for business, crypto &amp; fintech <s>that breaks in production</s><br><span class="red">that just works</span></p>
+    <div class="hero-row">
+      <p class="muted">From a landing page to a crypto exchange.<br>We combine engineering, security and clean design so your product works for your business — since 2014.</p>
       <div class="btns">
-        <a class="btn btn-solid" href="mailto:nmy@santinel.me">Email us
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        <a class="btn btn-red" href="#contact">Start a project
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
         </a>
-        <a class="btn btn-ghost" href="https://wa.me/380932637515" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn-line" href="#work">See our work
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+        </a>
       </div>
     </div>
-    <div class="channels">
-      <a class="channel" href="mailto:nmy@santinel.me"><span class="meta">Email</span><strong>nmy@santinel.me</strong></a>
-      <a class="channel" href="tel:+380932637515"><span class="meta">Phone</span><strong>+380 93 263 75 15</strong></a>
-      <a class="channel" href="https://wa.me/380932637515" target="_blank" rel="noopener"><span class="meta">WhatsApp</span><strong>Message us ↗</strong></a>
-      <a class="channel" href="https://t.me/inemyrovsk" target="_blank" rel="noopener"><span class="meta">Telegram</span><strong>@inemyrovsk ↗</strong></a>
-      <a class="channel" href="https://www.linkedin.com/in/ivan-nemyrovskiy-05b323224/" target="_blank" rel="noopener"><span class="meta">LinkedIn</span><strong>Ivan Nemyrovskyi ↗</strong></a>
+  </div>
+  <div class="shots">
+    <a class="shot" href="#work"><img src="img/alphalox.jpg" alt="ACM Finance (AlphaLOX) crypto exchange homepage" width="1440" height="900"><span>ACM · Crypto exchange <span aria-hidden="true">↓</span></span></a>
+    <a class="shot" href="#work"><img src="img/bober.jpg" alt="Bober barbershop CRM homepage" width="1440" height="900"><span>Bober · CRM <span aria-hidden="true">↓</span></span></a>
+    <a class="shot" href="#work"><img src="img/getcaptions.jpg" alt="GetCaptions AI video subtitles homepage" width="1440" height="900"><span>GetCaptions · AI SaaS <span aria-hidden="true">↓</span></span></a>
+  </div>
+  <div class="wrap">
+    <div class="hero-foot">
+      <span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Clear spec · Transparent timelines · One team since 2014</span>
+      <a href="#services">What we build ↓</a>
+    </div>
+  </div>
+</section>
+
+<section id="services" class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker"><b>01</b>/ Services</p>
+      <div>
+        <h2>Not just code. The whole system.</h2>
+        <p class="muted">Architecture, development, integrations and support — one team from the first spec to a stable product.</p>
+      </div>
+    </div>
+    <div class="svc">
+      <div class="svc-row">
+        <span class="n">01</span>
+        <h3>Websites &amp; Web Apps</h3>
+        <div><p class="muted">Landing pages, corporate sites and full web platforms: fast, responsive and built to turn visitors into customers.</p>
+          <div class="tags"><span>Landing pages</span><span>Corporate sites</span><span>Web platforms</span></div></div>
+      </div>
+      <div class="svc-row">
+        <span class="n">02</span>
+        <h3>Telegram Bots</h3>
+        <div><p class="muted">Bots and Mini Apps for sales, support, bookings and payments — with CRM integrations and admin panels.</p>
+          <div class="tags"><span>Bots</span><span>Mini Apps</span><span>Payments in Telegram</span></div></div>
+      </div>
+      <div class="svc-row">
+        <span class="n">03</span>
+        <h3>Crypto Exchanges — DEX &amp; CEX</h3>
+        <div><p class="muted">Centralized and decentralized exchanges: trading engines, wallets, swaps and smart contracts with security at the core.</p>
+          <div class="tags"><span>CEX</span><span>DEX</span><span>Wallets</span><span>Smart contracts</span></div></div>
+      </div>
+      <div class="svc-row">
+        <span class="n">04</span>
+        <h3>Fintech &amp; Payment Systems</h3>
+        <div><p class="muted">Payment gateways, SEPA transfers, balances and reconciliation — reliable money flows for your product.</p>
+          <div class="tags"><span>Payment systems</span><span>SEPA</span><span>Banking integrations</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker"><b>02</b>/ Portfolio</p>
+      <div>
+        <h2>Different businesses. Real products.</h2>
+        <p class="muted">From crypto exchanges to CRM and AI. Not mockups — live products used by real customers.</p>
+      </div>
+    </div>
+    <div class="grid">
+      <article class="case">
+        <div class="pic"><img src="img/alphalox.jpg" alt="ACM Finance (AlphaLOX) crypto exchange homepage" width="1440" height="900" loading="lazy"></div>
+        <span class="type">01 / Crypto exchange</span>
+        <h3>ACM Crypto Simplified</h3>
+        <p class="muted">EU crypto exchange with spot, futures, savings plans and trading bots — now AlphaLOX</p>
+        <p class="hl">Crypto trading with SEPA deposits &amp; withdrawals</p>
+      </article>
+      <article class="case">
+        <div class="pic"><img src="img/bober.jpg" alt="Bober barbershop CRM homepage" width="1440" height="900" loading="lazy"></div>
+        <span class="type">02 / CRM</span>
+        <h3>Bober</h3>
+        <p class="muted">Booking and CRM built for barbershops</p>
+        <p class="hl">Online booking, Telegram reminders, client cards &amp; payroll</p>
+      </article>
+      <article class="case">
+        <div class="pic"><img src="img/getcaptions.jpg" alt="GetCaptions AI video subtitles homepage" width="1440" height="900" loading="lazy"></div>
+        <span class="type">03 / AI SaaS</span>
+        <h3>GetCaptions</h3>
+        <p class="muted">Automatic, animated subtitles for videos</p>
+        <p class="hl">AI transcription in 100+ languages</p>
+      </article>
+      <article class="case">
+        <div class="pic blank" role="img" aria-label="Swag.com"><b>swag<span class="red">.</span>com</b></div>
+        <span class="type">04 / E-commerce</span>
+        <h3>Swag.com</h3>
+        <p class="muted">E-commerce platform for custom branded merchandise</p>
+        <p class="hl">Online store, product customization &amp; orders</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="approach" class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker"><b>03</b>/ About</p>
+      <div><h2>Sense first. Then code.</h2></div>
+    </div>
+    <div class="approach">
+      <div class="badge">
+        <p class="muted">NMY — named after our founder, Ivan Nemyrovskyi</p>
+        <div><b>2014</b><p class="muted" style="margin-top:16px">A team of developers building products together ever since.</p></div>
+      </div>
+      <div>
+        <p class="lead-q">Software that breaks costs more than software that was built right. We design the architecture and money flows before writing a single line of code.</p>
+        <div class="points">
+          <div class="point"><span class="n">01</span><div><h3>Security at the core</h3><p class="muted">Payments, wallets and user data are designed to be safe from day one, not patched later.</p></div></div>
+          <div class="point"><span class="n">02</span><div><h3>Full cycle, one team</h3><p class="muted">From spec and prototype to code, launch and day-to-day support — the people you talk to write your code.</p></div></div>
+          <div class="point"><span class="n">03</span><div><h3>Experience across markets</h3><p class="muted">Crypto, fintech, e-commerce, CRM and AI products for clients worldwide.</p></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="stats">
+      <div><b>2014</b><span>Building since</span></div>
+      <div><b>12+</b><span>Years of experience</span></div>
+      <div><b>4</b><span>Core directions</span></div>
+      <div><b>1</b><span>Team, start to finish</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="process" class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker"><b>04</b>/ Process</p>
+      <div><h2>From idea to launch.</h2></div>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="n">01</span><h3>Discovery</h3><p class="muted">We dig into your goals, users and risks and agree on what success means.</p></div>
+      <div class="step"><span class="n">02</span><h3>Design</h3><p class="muted">We map the flows, the interface and the architecture before writing code.</p></div>
+      <div class="step"><span class="n">03</span><h3>Build</h3><p class="muted">We develop in short iterations and show you working software every step.</p></div>
+      <div class="step"><span class="n">04</span><h3>Launch &amp; Scale</h3><p class="muted">We launch, monitor and keep improving the product as it grows.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="stack" class="sec">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker"><b>05</b>/ Stack</p>
+      <div><h2>Technologies we work with.</h2></div>
+    </div>
+  </div>
+  <div class="marquee" aria-label="Python, JavaScript, PHP, MySQL, React, Django, Node.js, Laravel, Symfony, Magento, Vue.js">
+    <div class="track" aria-hidden="true">
+      <span>Python</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>React</span><span>Django</span><span>Node.js</span><span>Laravel</span><span>Symfony</span><span>Magento</span><span>Vue.js</span>
+      <span>Python</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>React</span><span>Django</span><span>Node.js</span><span>Laravel</span><span>Symfony</span><span>Magento</span><span>Vue.js</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="sec">
+  <div class="wrap cta">
+    <div>
+      <p class="kicker"><b>06</b>/ Contact</p>
+      <h2>Let’s talk about <span class="red">your project</span></h2>
+      <p class="lead muted">Tell us what you want to build — we’ll come back with a plan, an estimate and clear next steps.</p>
+      <div class="btns" style="margin-top:32px">
+        <a class="btn btn-red" href="mailto:nmy@santinel.me">Email us
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+        </a>
+        <a class="btn btn-out" href="https://wa.me/380932637515" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn-out" href="https://t.me/inemyrovsk" target="_blank" rel="noopener">Telegram</a>
+      </div>
+    </div>
+    <div>
+      <a class="ch" href="mailto:nmy@santinel.me"><span>Email</span><strong>nmy@santinel.me</strong></a>
+      <a class="ch" href="tel:+380932637515"><span>Phone</span><strong>+380 93 263 75 15</strong></a>
+      <a class="ch" href="https://wa.me/380932637515" target="_blank" rel="noopener"><span>WhatsApp</span><strong>Message us ↗</strong></a>
+      <a class="ch" href="https://t.me/inemyrovsk" target="_blank" rel="noopener"><span>Telegram</span><strong>@inemyrovsk ↗</strong></a>
     </div>
   </div>
 </section>
@@ -344,9 +388,9 @@ footer .container{display:flex;flex-wrap:wrap;justify-content:space-between;gap:
 </main>
 
 <footer>
-  <div class="container">
-    <span class="meta">© 2026 NMY</span>
-    <span class="meta">Software development team · since 2014</span>
+  <div class="wrap">
+    <a href="#top" class="logo" aria-label="Back to top"><b><span class="red">N</span>MY</b><small>AGENCY</small></a>
+    <span>© 2026 NMY Agency · Software development since 2014</span>
   </div>
 </footer>
 
