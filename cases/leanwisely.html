@@ -16,7 +16,7 @@
 <meta name="theme-color" content="#000000">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Arial Black,Arial,sans-serif' font-size='34' font-weight='900' fill='%23ff1a1a'%3EN%3C/text%3E%3C/svg%3E">
 <link rel="preload" href="../fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="../css/site.css">
+<link rel="stylesheet" href="../css/site.css?v=20261116">
 </head>
 <body>
 
@@ -92,26 +92,32 @@
     </div>
   </div>
 </section>
-<section id="contact" class="band">
+<section id="contact" class="contact">
   <div class="wrap">
     <div>
       <p class="kicker"><b>→</b> Your project</p>
       <h2>Want a product like Lean Wisely?</h2>
-      <p class="lead">Leave your name and phone number — we’ll get back to you with questions, a plan and an estimate.</p>
+      <ul class="perks">
+        <li>A short call about your goals</li>
+        <li>A clear plan and estimate</li>
+        <li>No obligation</li>
+      </ul>
     </div>
-      <form class="form" action="https://formgong.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="fk_bKtJuNZFhDrxris7Mav7Y2JN">
-        <input type="hidden" name="_lang" value="en">
-        <label>Name<input type="text" name="name" required autocomplete="name" enterkeyhint="next"></label>
-        <!-- name="email" matches the field set up in Formgong; it holds the phone number -->
-        <label>Phone number<input type="tel" name="email" required autocomplete="tel" inputmode="tel" enterkeyhint="next"></label>
-        <label>Message<textarea name="message" required rows="4" placeholder="A couple of lines about your project"></textarea></label>
-        <div class="trap" aria-hidden="true"><label>Leave this field empty<input name="botcheck" tabindex="-1" autocomplete="off"></label></div>
-        <button type="submit" class="btn btn-red">Send message</button>
-        <p class="form-msg" data-fg-success hidden>Thank you! Your message is sent — we’ll get back to you soon.</p>
-        <p class="form-msg form-bad" data-fg-error hidden></p>
-        <p class="fg-credit"><a href="https://formgong.com/en/?ref=badge&amp;utm_source=badge&amp;utm_medium=form&amp;utm_campaign=designer" target="_blank" rel="noopener">Form by Formgong</a></p>
-      </form>
+    <form class="form" action="https://formgong.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="fk_bKtJuNZFhDrxris7Mav7Y2JN">
+      <input type="hidden" name="_lang" value="en">
+      <label>Your name<input type="text" name="name" required autocomplete="name" enterkeyhint="next" placeholder="John Smith"></label>
+      <!-- name="email" matches the field set up in Formgong; it holds the phone number -->
+      <label>Phone number<input type="tel" name="email" required autocomplete="tel" inputmode="tel" enterkeyhint="next" placeholder="+1 555 123 4567"></label>
+      <label><span>About your project <small>(optional)</small></span><textarea name="message" rows="3" placeholder="What would you like to build?"></textarea></label>
+      <!-- spam trap, hidden inline so it stays invisible even before CSS loads -->
+      <div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden"><input name="botcheck" tabindex="-1" autocomplete="off"></div>
+      <button type="submit" class="btn btn-red">Send request</button>
+      <p class="form-msg" data-fg-success hidden>Thank you! We’ve got your request and will contact you soon.</p>
+      <p class="form-msg form-bad" data-fg-error hidden></p>
+      <p class="note">Your details stay private. No spam, ever.</p>
+      <p class="fg-credit"><a href="https://formgong.com/en/?ref=badge&amp;utm_source=badge&amp;utm_medium=form&amp;utm_campaign=designer" target="_blank" rel="noopener">Form by Formgong</a></p>
+    </form>
   </div>
 </section>
 
