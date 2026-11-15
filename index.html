@@ -6,215 +6,24 @@
 <title>NMY Agency — Websites, Telegram Bots, Crypto & Fintech Development</title>
 <meta name="description" content="NMY Agency builds websites, Telegram bots, crypto exchanges (DEX & CEX) and fintech payment systems with SEPA. One senior team, building together since 2014.">
 <meta name="author" content="NMY Agency">
-<meta property="og:title" content="NMY Agency — Software that just works">
+<link rel="canonical" href="https://nmy-solutions.github.io/">
+<meta property="og:title" content="NMY Agency — Software for business, crypto & fintech">
 <meta property="og:description" content="Websites, Telegram bots, crypto exchanges and fintech payment systems. Building together since 2014.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="NMY Agency">
-<meta property="og:image" content="img/addup.jpg">
+<meta property="og:url" content="https://nmy-solutions.github.io/">
+<meta property="og:image" content="https://nmy-solutions.github.io/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://nmy-solutions.github.io/img/og.jpg">
 <meta name="theme-color" content="#000000">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Arial Black,Arial,sans-serif' font-size='34' font-weight='900' fill='%23ff1a1a'%3EN%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
-<style>
-:root{
-  --bg:#000;
-  --fg:#fff;
-  --red:#ff1a1a;
-  --red-2:#cc0000;
-  --muted:#a6a6a6;
-  --border:#262626;
-  --card:#0d0d0d;
-  --head:"Montserrat",system-ui,sans-serif;
-  --body:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-}
-*,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:84px}
-body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-a{color:inherit;text-decoration:none}
-img{display:block;max-width:100%}
-button{font:inherit;color:inherit}
-:focus-visible{outline:2px solid var(--red);outline-offset:3px}
-h1,h2,h3,p{margin:0}
-.wrap{width:100%;max-width:1440px;margin:0 auto;padding-inline:16px}
-@media (min-width:768px){.wrap{padding-inline:40px}}
-.muted{color:var(--muted)}
-.red{color:var(--red)}
-.ico{width:14px;height:14px;flex:none}
-
-/* buttons */
-.btn{display:inline-flex;align-items:center;gap:10px;height:42px;padding:0 18px;border-radius:8px;font-size:15px;font-weight:500;white-space:nowrap;transition:background .2s,box-shadow .2s,color .2s,border-color .2s}
-.btn-red{background:var(--red);color:#fff}
-.btn-red:hover{background:var(--red-2);box-shadow:0 0 28px rgb(255 26 26 / .45)}
-.btn-line{color:#fff}
-.btn-line:hover{color:var(--red)}
-.btn-out{border:1px solid var(--border);background:var(--card)}
-.btn-out:hover{border-color:var(--red)}
-.btn-dark{background:#111;color:#fff}
-.btn-dark:hover{background:#000}
-.btn-white{border:1px solid rgb(255 255 255 / .55);color:#fff}
-.btn-white:hover{background:#fff;color:var(--red)}
-
-/* header */
-header{position:sticky;top:0;z-index:20;background:rgb(0 0 0 / .85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:84px;gap:24px}
-.logo{display:flex;flex-direction:column;align-items:center;line-height:1;font-family:var(--head);font-weight:900}
-.logo b{font-size:26px;letter-spacing:.02em}
-.logo small{font-size:7px;font-weight:800;letter-spacing:.35em;margin-top:2px}
-.links{display:none;gap:28px;font-size:15px}
-.links a:hover{color:var(--red)}
-.nav-r{display:flex;align-items:center;gap:10px}
-.menu{position:relative}
-.menu summary{display:grid;place-items:center;width:42px;height:42px;border:1px solid var(--border);border-radius:8px;cursor:pointer;list-style:none}
-.menu summary::-webkit-details-marker{display:none}
-.menu nav{position:absolute;right:0;top:52px;display:grid;min-width:200px;padding:8px;background:#0a0a0a;border:1px solid var(--border);border-radius:10px}
-.menu nav a{padding:10px 12px;border-radius:6px}
-.menu nav a:hover{background:#161616;color:var(--red)}
-@media (min-width:1024px){.links{display:flex}.menu{display:none}}
-@media (max-width:420px){.nav-r .btn-red{padding:0 12px;font-size:14px}}
-
-/* hero */
-.hero-meta{display:flex;justify-content:space-between;gap:16px;padding-top:48px;font-size:12px;font-weight:500;text-transform:uppercase;color:#d4d4d4}
-.hero-meta span:last-child{display:none}
-@media (min-width:768px){.hero-meta span:last-child{display:block}}
-.wordmark{margin-top:48px;font-family:var(--head);font-weight:900;font-size:clamp(3.4rem,11vw,9.5rem);line-height:.9;letter-spacing:-.01em;animation:up .7s ease-out both}
-.tagline{margin-top:36px;font-family:var(--head);font-weight:800;font-size:clamp(1.6rem,3.4vw,2.9rem);line-height:1.15;animation:up .7s .1s ease-out both}
-.tagline s{color:#6b6b6b;text-decoration-color:var(--red);text-decoration-thickness:3px}
-@keyframes up{from{opacity:0;transform:translateY(20px)}}
-.hero-row{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:28px;margin-top:44px}
-.hero-row p{max-width:30rem;font-size:17px;line-height:1.6}
-.btns{display:flex;flex-wrap:wrap;gap:12px}
-
-.shots{display:grid;grid-auto-flow:column;grid-auto-columns:85%;gap:10px;margin-top:44px;padding-inline:10px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
-.shots::-webkit-scrollbar{display:none}
-@media (min-width:768px){.shots{grid-auto-flow:row;grid-template-columns:repeat(3,1fr);overflow:visible}}
-.shot{position:relative;display:block;aspect-ratio:16/9.3;overflow:hidden;scroll-snap-align:start;background:var(--card)}
-.shot img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .6s}
-.shot:hover img{transform:scale(1.04)}
-.shot>span{position:absolute;left:14px;right:14px;bottom:12px;display:flex;justify-content:space-between;align-items:center;padding:10px 14px;background:rgb(20 20 20 / .88);backdrop-filter:blur(8px);border:1px solid rgb(255 255 255 / .08);font-size:14px}
-.hero-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-block:22px;font-size:13px;color:var(--muted)}
-.hero-foot span{display:flex;align-items:center;gap:8px}
-.hero-foot a:hover{color:#fff}
-
-/* sections */
-.sec{padding-block:96px;border-top:1px solid var(--border)}
-@media (min-width:768px){.sec{padding-block:128px}}
-.sec-head{display:grid;gap:20px}
-@media (min-width:1024px){.sec-head{grid-template-columns:362px 1fr}}
-.kicker{display:flex;gap:12px;padding-top:14px;font-size:12px;font-weight:500;text-transform:uppercase}
-.kicker b{color:var(--red);font-weight:500}
-.sec-head h2{font-family:var(--head);font-weight:800;font-size:clamp(2rem,4.2vw,3.25rem);line-height:1.12}
-.sec-head p{max-width:36rem;margin-top:20px;font-size:17px}
-
-/* services */
-.svc{margin-top:56px;border-top:1px solid var(--border)}
-.svc-row{display:grid;gap:14px;padding-block:36px;border-bottom:1px solid var(--border)}
-.svc-row .n{font-size:13px;color:var(--red)}
-.svc-row h3{font-family:var(--head);font-weight:700;font-size:clamp(1.5rem,2.4vw,1.9rem);line-height:1.2}
-.tags{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:18px;font-size:13px;font-weight:500}
-.tags span{display:flex;align-items:center;gap:8px}
-.tags span::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--red)}
-@media (min-width:1024px){.svc-row{grid-template-columns:80px 1fr 1.25fr}}
-
-/* portfolio slider */
-.slider{display:grid;grid-auto-flow:column;grid-auto-columns:88%;gap:24px;margin-top:56px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none}
-.slider::-webkit-scrollbar{display:none}
-@media (min-width:768px){.slider{grid-auto-columns:calc((100% - 24px)/2)}}
-@media (min-width:1100px){.slider{grid-auto-columns:calc((100% - 48px)/3)}}
-.case{scroll-snap-align:start}
-.case .pic{aspect-ratio:16/9.6;overflow:hidden;background:var(--card);border:1px solid var(--border)}
-.case .pic img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .6s}
-.case:hover .pic img{transform:scale(1.04)}
-.case .type{display:block;margin-top:22px;font-size:13px;color:var(--muted)}
-.case h3{margin-top:10px;font-family:var(--head);font-weight:700;font-size:clamp(1.35rem,2vw,1.6rem);line-height:1.2}
-.case p{margin-top:12px;font-size:15px}
-.case .hl{margin-top:10px;font-size:14px;color:var(--red)}
-.slider-bar{display:flex;justify-content:space-between;align-items:center;margin-top:44px}
-.count{font-size:15px;color:var(--muted)}
-.count b{color:#fff;font-weight:500}
-.arrows{display:flex;gap:8px}
-.arrows button{display:grid;place-items:center;width:44px;height:44px;background:var(--card);border:1px solid var(--border);border-radius:6px;cursor:pointer;transition:border-color .2s,opacity .2s}
-.arrows button:hover:not(:disabled){border-color:var(--red)}
-.arrows button:disabled{opacity:.35;cursor:default}
-
-/* approach */
-.approach{display:grid;gap:48px;margin-top:56px}
-@media (min-width:1024px){.approach{grid-template-columns:1fr 1.15fr;gap:80px}}
-.badge{position:relative;display:flex;flex-direction:column;justify-content:space-between;min-height:420px;padding:36px;overflow:hidden;background:linear-gradient(160deg,#151515,#050505);border:1px solid var(--border)}
-.badge::before{content:"";position:absolute;width:420px;height:420px;right:-140px;top:-140px;background:radial-gradient(circle,rgb(255 26 26 / .45),transparent 65%);animation:glow 6s ease-in-out infinite alternate}
-@keyframes glow{to{opacity:.45;transform:scale(1.15)}}
-.badge b{position:relative;font-family:var(--head);font-weight:900;font-size:clamp(5rem,12vw,9rem);line-height:.9}
-.badge p{position:relative;max-width:22rem;font-size:15px}
-.lead-q{font-size:clamp(1.3rem,2.2vw,1.75rem);line-height:1.45}
-.points{margin-top:36px;border-top:1px solid var(--border)}
-.point{display:grid;grid-template-columns:34px 1fr;padding-block:26px;border-bottom:1px solid var(--border)}
-.point .n{font-size:12px;color:var(--red);padding-top:6px}
-.point h3{font-family:var(--head);font-weight:700;font-size:19px}
-.point p{margin-top:10px;font-size:14px}
-.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:32px;margin-top:72px}
-@media (min-width:768px){.stats{grid-template-columns:repeat(4,1fr)}}
-.stats b{display:block;font-family:var(--head);font-weight:800;font-size:clamp(2.4rem,4.5vw,3.6rem);line-height:1}
-.stats span{display:block;margin-top:12px;font-size:13px;color:var(--muted)}
-
-/* process */
-.steps{display:grid;gap:36px 24px;margin-top:56px}
-@media (min-width:640px){.steps{grid-template-columns:1fr 1fr}}
-@media (min-width:1100px){.steps{grid-template-columns:repeat(4,1fr)}}
-.step{padding-top:22px;border-top:1px solid var(--red)}
-.step .n{font-size:12px;color:var(--red)}
-.step h3{margin-top:26px;font-family:var(--head);font-weight:700;font-size:19px}
-.step p{margin-top:12px;font-size:14px}
-.note{display:flex;gap:18px;align-items:flex-start;margin-top:56px;padding:24px;background:var(--card);border:1px solid var(--border);font-size:14px}
-.note b{color:var(--red);font-size:22px;line-height:1}
-
-/* stack */
-.marquee{margin-top:56px;overflow:hidden;border-block:1px solid var(--border);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
-.track{display:flex;width:max-content;animation:marquee 32s linear infinite}
-.track span{display:flex;align-items:center;gap:36px;padding:28px 18px;font-family:var(--head);font-weight:800;font-size:clamp(1.5rem,3vw,2.4rem);white-space:nowrap}
-.track span::after{content:"";width:10px;height:10px;border-radius:50%;background:var(--red)}
-@keyframes marquee{to{transform:translateX(-50%)}}
-
-/* red contact band */
-.band{background:var(--red);color:#fff}
-.band .wrap{display:grid;gap:48px;padding-block:96px}
-@media (min-width:1024px){.band .wrap{grid-template-columns:1.15fr 1fr;align-items:center;padding-block:120px}}
-.band .kicker{padding:0}
-.band .kicker b{color:#fff}
-.band h2{margin-top:22px;font-family:var(--head);font-weight:800;font-size:clamp(2.2rem,5vw,4rem);line-height:1.05}
-.band .lead{max-width:32rem;margin-top:22px;font-size:17px;color:rgb(255 255 255 / .85)}
-.ch{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:24px;border-bottom:1px solid rgb(255 255 255 / .3)}
-.ch:first-child{border-top:1px solid rgb(255 255 255 / .3)}
-.ch span{font-size:12px;text-transform:uppercase;color:rgb(255 255 255 / .75)}
-.ch strong{font-family:var(--head);font-weight:800;font-size:clamp(1.15rem,2.4vw,1.75rem);text-align:right;overflow-wrap:anywhere;transition:opacity .2s}
-.ch:hover strong{opacity:.75}
-
-/* faq */
-.faq{margin-top:20px}
-.faq details{border-bottom:1px solid var(--border)}
-.faq summary{display:grid;grid-template-columns:34px 1fr 24px;align-items:center;padding-block:24px;cursor:pointer;list-style:none;font-size:17px;font-weight:500}
-.faq summary::-webkit-details-marker{display:none}
-.faq summary .n{font-size:12px;color:var(--red)}
-.faq summary svg{transition:transform .2s}
-.faq details[open] summary svg{transform:rotate(180deg)}
-.faq details p{padding:0 24px 24px 34px;max-width:52rem}
-
-/* floating telegram */
-.tg{position:fixed;right:20px;bottom:20px;z-index:30;display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:#2aabee;box-shadow:0 8px 28px rgb(42 171 238 / .45);transition:transform .2s}
-.tg:hover{transform:scale(1.08)}
-.tg svg{width:26px;height:26px}
-
-footer{border-top:1px solid var(--border)}
-footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;padding-block:36px;font-size:13px;color:var(--muted)}
-footer nav{display:flex;flex-wrap:wrap;gap:20px}
-footer nav a:hover{color:#fff}
-
-@media (prefers-reduced-motion:reduce){
-  html,.slider{scroll-behavior:auto}
-  *,*::before,*::after{animation:none!important;transition:none!important}
-}
-</style>
+<link rel="stylesheet" href="css/site.css">
 </head>
 <body>
 
@@ -229,7 +38,7 @@ footer nav a:hover{color:#fff}
       <a href="#faq">FAQ</a>
     </nav>
     <div class="nav-r">
-      <a class="btn btn-red" href="#contact">Contact us
+      <a class="btn btn-red" href="https://t.me/inemyrovsk" target="_blank" rel="noopener">Contact us
         <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
       </a>
       <details class="menu">
@@ -253,11 +62,11 @@ footer nav a:hover{color:#fff}
   <div class="wrap">
     <div class="hero-meta"><span>Remote team / Working worldwide</span><span>Web · Bots · Crypto · Fintech</span></div>
     <h1 class="wordmark"><span class="red">N</span>MY<span class="red">.</span> AGENCY</h1>
-    <p class="tagline">Software for business, crypto &amp; fintech <s>that breaks</s><br><span class="red">that just works</span></p>
+    <p class="tagline">Software for business, crypto &amp; fintech<br><span class="red">built to work from day one.</span></p>
     <div class="hero-row">
       <p class="muted">From a landing page to a crypto exchange.<br>We combine engineering, security and clean design so your product works for your business — since 2014.</p>
       <div class="btns">
-        <a class="btn btn-red" href="#contact">Start a project
+        <a class="btn btn-red" href="https://t.me/inemyrovsk" target="_blank" rel="noopener">Start a project
           <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
         </a>
         <a class="btn btn-line" href="#work">See our work
@@ -267,9 +76,9 @@ footer nav a:hover{color:#fff}
     </div>
   </div>
   <div class="shots">
-    <a class="shot" href="#work"><img src="img/addup.jpg" alt="AddUp crypto trading platform" width="1440" height="900"><span>AddUp · Crypto trading <span aria-hidden="true">↓</span></span></a>
-    <a class="shot" href="#work"><img src="img/swag.jpg" alt="Swag.com branded merchandise platform" width="1440" height="900"><span>Swag.com · E-commerce <span aria-hidden="true">↓</span></span></a>
-    <a class="shot" href="#work"><img src="img/crm.jpg" alt="CRM for barbershops" width="1440" height="900"><span>CRM · Booking system <span aria-hidden="true">↓</span></span></a>
+    <a class="shot" href="cases/addup.html"><img src="img/cases/addup-1.jpg" alt="AddUp crypto trading platform" width="1440" height="900"><span>AddUp · Crypto trading <span aria-hidden="true">↗</span></span></a>
+    <a class="shot" href="cases/swag.html"><img src="img/cases/swag-1.jpg" alt="Swag.com branded merchandise platform" width="1440" height="900"><span>Swag.com · E-commerce <span aria-hidden="true">↗</span></span></a>
+    <a class="shot" href="cases/crm.html"><img src="img/cases/crm-1.jpg" alt="CRM for barbershops" width="1440" height="900"><span>CRM · Booking system <span aria-hidden="true">↗</span></span></a>
   </div>
   <div class="wrap">
     <div class="hero-foot">
@@ -327,51 +136,65 @@ footer nav a:hover{color:#fff}
       </div>
     </div>
     <div class="slider" id="slider" tabindex="0" aria-label="Projects">
-      <article class="case">
-        <div class="pic"><img src="img/addup.jpg" alt="AddUp crypto trading platform homepage" width="1440" height="900" loading="lazy"></div>
+      <a class="case" href="cases/addup.html">
+        <div class="pic"><img src="img/cases/addup-1.jpg" alt="AddUp crypto trading platform homepage" width="1440" height="900" loading="lazy"></div>
         <span class="type">01 / Crypto</span>
         <h3>AddUp</h3>
-        <p class="muted">Cryptocurrency trading platform</p>
-        <p class="hl">Live markets for BTC, ETH, SOL and more</p>
-      </article>
-      <article class="case">
-        <div class="pic"><img src="img/swag.jpg" alt="Swag.com branded merchandise platform homepage" width="1440" height="900" loading="lazy"></div>
+        <p class="muted">Cryptocurrency trading platform with web and mobile apps</p>
+        <p class="hl">Spot trading on 1,000+ assets</p>
+        <span class="more">View case →</span>
+      </a>
+      <a class="case" href="cases/swag.html">
+        <div class="pic"><img src="img/cases/swag-1.jpg" alt="Swag.com branded merchandise platform homepage" width="1440" height="900" loading="lazy"></div>
         <span class="type">02 / E-commerce</span>
         <h3>Swag.com</h3>
         <p class="muted">All-in-one platform for custom branded merchandise</p>
         <p class="hl">Shop, store and ship company swag worldwide</p>
-      </article>
-      <article class="case">
-        <div class="pic"><img src="img/crm.jpg" alt="Booking and CRM system homepage" width="1440" height="900" loading="lazy"></div>
+        <span class="more">View case →</span>
+      </a>
+      <a class="case" href="cases/crm.html">
+        <div class="pic"><img src="img/cases/crm-1.jpg" alt="Booking and CRM system homepage" width="1440" height="900" loading="lazy"></div>
         <span class="type">03 / SaaS</span>
         <h3>CRM</h3>
         <p class="muted">Booking and CRM system for barbershops</p>
         <p class="hl">Online booking, Telegram reminders, client cards &amp; payroll</p>
-      </article>
-      <article class="case">
-        <div class="pic"><img src="img/formgong.jpg" alt="Formgong form-to-Telegram service homepage" width="1440" height="900" loading="lazy"></div>
+        <span class="more">View case →</span>
+      </a>
+      <a class="case" href="cases/formgong.html">
+        <div class="pic"><img src="img/cases/formgong-1.jpg" alt="Formgong form-to-Telegram service homepage" width="1440" height="900" loading="lazy"></div>
         <span class="type">04 / Telegram · SaaS</span>
         <h3>Formgong</h3>
         <p class="muted">Every website form submission delivered to Telegram and email</p>
         <p class="hl">Works with WordPress, Tilda, Wix, Shopify and plain HTML</p>
-      </article>
-      <article class="case">
-        <div class="pic"><img src="img/swiftmail.jpg" alt="SwiftMail AI marketing automation homepage" width="1440" height="900" loading="lazy"></div>
+        <span class="more">View case →</span>
+      </a>
+      <a class="case" href="cases/swiftmail.html">
+        <div class="pic"><img src="img/cases/swiftmail-1.jpg" alt="SwiftMail AI marketing automation homepage" width="1440" height="900" loading="lazy"></div>
         <span class="type">05 / AI · Marketing</span>
         <h3>SwiftMail</h3>
         <p class="muted">AI marketing automation for websites</p>
         <p class="hl">Email, SMS, push and popups from one snippet</p>
-      </article>
-      <article class="case">
-        <div class="pic"><img src="img/carrierscan.jpg" alt="CarrierScan AI text detector homepage" width="1440" height="900" loading="lazy"></div>
-        <span class="type">06 / AI</span>
+        <span class="more">View case →</span>
+      </a>
+      <a class="case" href="cases/leanwisely.html">
+        <div class="pic"><img src="img/cases/leanwisely-1.jpg" alt="Lean Wisely content website homepage" width="1440" height="900" loading="lazy"></div>
+        <span class="type">06 / Website</span>
+        <h3>Lean Wisely</h3>
+        <p class="muted">Editorial website about healthy, sustainable weight loss</p>
+        <p class="hl">Research-based articles, calculators &amp; video</p>
+        <span class="more">View case →</span>
+      </a>
+      <a class="case" href="cases/carrierscan.html">
+        <div class="pic"><img src="img/cases/carrierscan-1.jpg" alt="CarrierScan AI text detector homepage" width="1440" height="900" loading="lazy"></div>
+        <span class="type">07 / AI</span>
         <h3>CarrierScan</h3>
         <p class="muted">AI text detector for ChatGPT, Gemini and Claude</p>
-        <p class="hl">Free check in multiple languages, no sign-up</p>
-      </article>
+        <p class="hl">Free check in 7 languages, no sign-up</p>
+        <span class="more">View case →</span>
+      </a>
     </div>
     <div class="slider-bar">
-      <p class="count" aria-live="polite"><b id="cur">01</b> / <span id="total">06</span></p>
+      <p class="count" aria-live="polite"><b id="cur">01</b> / <span id="total">07</span></p>
       <div class="arrows">
         <button type="button" id="prev" aria-label="Previous project"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
         <button type="button" id="next" aria-label="Next project"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
@@ -392,18 +215,18 @@ footer nav a:hover{color:#fff}
         <div><b>2014</b><p class="muted" style="margin-top:16px">A team of developers building products together ever since.</p></div>
       </div>
       <div>
-        <p class="lead-q">Software that breaks costs more than software that was built right. We design the architecture and money flows before writing a single line of code.</p>
+        <p class="lead-q">Good software is designed before it is coded. We plan the architecture, data and money flows first — so the product is stable on launch day and easy to grow after it.</p>
         <div class="points">
           <div class="point"><span class="n">01</span><div><h3>Security at the core</h3><p class="muted">Payments, wallets and user data are designed to be safe from day one, not patched later.</p></div></div>
           <div class="point"><span class="n">02</span><div><h3>Full cycle, one team</h3><p class="muted">From spec and prototype to code, launch and day-to-day support — the people you talk to write your code.</p></div></div>
-          <div class="point"><span class="n">03</span><div><h3>Experience across markets</h3><p class="muted">Crypto, fintech, SaaS, CRM and AI products for clients worldwide.</p></div></div>
+          <div class="point"><span class="n">03</span><div><h3>Experience across markets</h3><p class="muted">Crypto, fintech, e-commerce, SaaS, CRM and AI products for clients worldwide.</p></div></div>
         </div>
       </div>
     </div>
     <div class="stats">
       <div><b>2014</b><span>Building since</span></div>
       <div><b>12+</b><span>Years of experience</span></div>
-      <div><b>4</b><span>Core directions</span></div>
+      <div><b>7</b><span>Live products in portfolio</span></div>
       <div><b>1</b><span>Team, start to finish</span></div>
     </div>
   </div>
@@ -439,20 +262,14 @@ footer nav a:hover{color:#fff}
     <div>
       <p class="kicker"><b>05</b>/ Contact</p>
       <h2>Let’s talk about your project.</h2>
-      <p class="lead">Tell us what you want to build — we’ll come back with a plan, an estimate and clear next steps.</p>
-      <div class="btns" style="margin-top:32px">
-        <a class="btn btn-dark" href="mailto:nmy@santinel.me">Email us
-          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
-        </a>
-        <a class="btn btn-white" href="https://wa.me/380932637515" target="_blank" rel="noopener">WhatsApp</a>
-        <a class="btn btn-white" href="https://t.me/inemyrovsk" target="_blank" rel="noopener">Telegram</a>
-      </div>
+      <p class="lead">Tap the button, write a couple of lines about your idea — we’ll reply with questions, a plan and an estimate.</p>
     </div>
     <div>
-      <a class="ch" href="mailto:nmy@santinel.me"><span>Email</span><strong>nmy@santinel.me</strong></a>
-      <a class="ch" href="tel:+380932637515"><span>Phone</span><strong>+380 93 263 75 15</strong></a>
-      <a class="ch" href="https://wa.me/380932637515" target="_blank" rel="noopener"><span>WhatsApp</span><strong>Message us ↗</strong></a>
-      <a class="ch" href="https://t.me/inemyrovsk" target="_blank" rel="noopener"><span>Telegram</span><strong>@inemyrovsk ↗</strong></a>
+      <a class="btn btn-dark btn-xl" href="https://t.me/inemyrovsk" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M21.9 4.3 18.6 20c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.2-8.3c.4-.4-.1-.6-.6-.2L6.1 13.6 1.2 12c-1.1-.3-1.1-1.1.2-1.6L20.5 3c.9-.3 1.7.2 1.4 1.3z"/></svg>
+        Message us on Telegram
+      </a>
+      <p class="alt">Prefer email? <a href="mailto:nmy@santinel.me">nmy@santinel.me</a></p>
     </div>
   </div>
 </section>
@@ -470,7 +287,7 @@ footer nav a:hover{color:#fff}
           </details>
           <details>
             <summary><span class="n">02</span>How does a project start?<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
-            <p class="muted">Send us a message by email, WhatsApp or Telegram. We’ll have a short call about your goals, then come back with a plan, an estimate and the next steps.</p>
+            <p class="muted">Message us on Telegram and tell us about your idea. We’ll have a short call about your goals, then come back with a plan, an estimate and the next steps.</p>
           </details>
           <details>
             <summary><span class="n">03</span>Do you work with clients outside Ukraine?<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
