@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NMY — Software Development Team</title>
+<meta name="description" content="NMY is a team of developers building websites, Telegram bots, crypto exchanges (DEX & CEX) and fintech payment systems since 2014.">
+<meta name="author" content="NMY">
+<meta property="og:title" content="NMY — Software Development Team">
+<meta property="og:description" content="Websites, Telegram bots, crypto exchanges and fintech payment systems. Building together since 2014.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NMY">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary">
+<meta name="theme-color" content="#0a0d16">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='6' fill='%230a0d16'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='Arial,sans-serif' font-size='22' font-weight='700' fill='%23f6f7fb'%3ENMY%3C/text%3E%3Crect x='12' y='47' width='40' height='3' fill='%234b6bff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:oklch(9.5% .012 262);
+  --fg:oklch(98.5% .004 260);
+  --muted:oklch(69% .025 262);
+  --accent:oklch(61% .23 265);
+  --accent-2:oklch(78% .14 266);
+  --surface:oklch(12.5% .027 267);
+  --border:oklch(98.5% .004 260 / .12);
+  --font:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font);line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+h1,h2,h3,p{margin:0}
+.container{width:100%;max-width:1280px;margin:0 auto;padding:0 16px}
+@media (min-width:768px){.container{padding:0 32px}}
+section{border-bottom:1px solid var(--border)}
+.label{font-size:10px;text-transform:uppercase;letter-spacing:.3em;color:var(--accent)}
+.meta{font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
+.title{margin-top:12px;font-size:clamp(2.25rem,5vw,3rem);font-weight:500;text-transform:uppercase;line-height:1.05}
+.muted{color:var(--muted)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 28px;border-radius:3px;font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.18em;white-space:nowrap;transition:background .15s,border-color .15s,color .15s}
+.btn-solid{background:var(--fg);color:var(--bg)}
+.btn-solid:hover{background:var(--accent-2)}
+.btn-ghost{border:1px solid var(--border);color:var(--fg)}
+.btn-ghost:hover{border-color:var(--accent);color:var(--accent-2)}
+.btn svg{width:16px;height:16px}
+
+/* header */
+header{position:sticky;top:0;z-index:10;background:oklch(9.5% .012 262 / .85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:24px}
+.logo{font-size:22px;font-weight:700;letter-spacing:.04em}
+.logo span{color:var(--accent)}
+.nav-links{display:none;gap:28px}
+.nav-link{font-size:11px;text-transform:uppercase;letter-spacing:.18em;color:var(--muted);transition:color .15s}
+.nav-link:hover{color:var(--fg)}
+@media (min-width:900px){.nav-links{display:flex}}
+
+/* hero */
+.hero{position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--border) 1px,transparent 1px),linear-gradient(90deg,var(--border) 1px,transparent 1px);background-size:64px 64px;mask-image:radial-gradient(ellipse at 60% 40%,#000 20%,transparent 75%);-webkit-mask-image:radial-gradient(ellipse at 60% 40%,#000 20%,transparent 75%);opacity:.5}
+.hero::after{content:"";position:absolute;width:70vw;height:70vw;max-width:900px;max-height:900px;right:-15vw;top:-20vw;background:radial-gradient(circle,oklch(61% .23 265 / .28),transparent 65%);pointer-events:none;animation:drift 14s ease-in-out infinite alternate}
+@keyframes drift{to{transform:translate(-6vw,8vw)}}
+.hero-inner{position:relative;z-index:1;display:flex;flex-direction:column;justify-content:space-between;min-height:calc(100svh - 68px);padding-block:40px}
+@media (min-width:768px){.hero-inner{min-height:760px;padding-block:56px}}
+.hero-top{display:flex;justify-content:space-between;gap:16px}
+.hero-top .meta{display:none}
+@media (min-width:768px){.hero-top .meta{display:block}}
+.hero-mid{padding:56px 0;animation:rise .8s ease-out both}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}}
+.hero-mid p{margin-bottom:20px;font-size:14px;font-weight:500;text-transform:uppercase}
+.wordmark{font-size:clamp(6rem,24vw,16rem);font-weight:500;line-height:.85;letter-spacing:-.02em}
+.wordmark span{color:var(--accent)}
+.hero-bottom{display:grid;gap:32px;padding-top:32px;border-top:1px solid var(--border)}
+.hero-bottom h2{max-width:36rem;font-size:clamp(1.875rem,3.5vw,2.25rem);font-weight:500;line-height:1.2}
+.hero-bottom .lead{max-width:36rem}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+@media (min-width:768px){.hero-bottom{grid-template-columns:1fr 1fr}.hero-bottom .lead{justify-self:end}}
+
+/* generic section */
+.block{padding-block:80px}
+@media (min-width:768px){.block{padding-block:112px}}
+.block-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px}
+
+/* services */
+.rows{margin-top:48px;border-top:1px solid var(--border)}
+.row{display:grid;gap:12px;padding:28px 0;border-bottom:1px solid var(--border);transition:background .15s}
+.row:hover{background:var(--surface)}
+.row .num{font-size:12px;color:var(--accent)}
+.row h3{font-size:clamp(1.75rem,3.5vw,2.25rem);font-weight:500;text-transform:uppercase;line-height:1.1}
+.row .arrow{display:none;color:var(--muted);transition:transform .15s,color .15s}
+.row:hover .arrow{color:var(--accent-2);transform:translateX(4px)}
+@media (min-width:768px){.row{grid-template-columns:80px 1fr 1fr auto;align-items:center;padding:28px 16px}.row .arrow{display:block}}
+
+/* work */
+.cards{display:grid;gap:1px;margin-top:48px;background:var(--border);border:1px solid var(--border)}
+@media (min-width:768px){.cards{grid-template-columns:1fr 1fr}}
+.card{display:flex;flex-direction:column;justify-content:space-between;gap:48px;min-height:240px;padding:28px;background:var(--bg);transition:background .15s}
+.card:hover{background:var(--surface)}
+.card h3{margin-top:12px;font-size:clamp(1.75rem,3vw,2.25rem);font-weight:500}
+.card .go{display:flex;justify-content:space-between;align-items:center;font-size:11px;text-transform:uppercase;letter-spacing:.18em;color:var(--muted)}
+.card:hover .go{color:var(--accent-2)}
+.note{margin-top:20px;font-size:13px}
+
+/* about */
+.about{display:grid;gap:40px;margin-top:48px}
+.about p{font-size:clamp(1.25rem,2.4vw,1.625rem);line-height:1.45}
+.facts{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--border)}
+.fact{padding:24px 0;border-bottom:1px solid var(--border)}
+.fact strong{display:block;font-size:clamp(2.5rem,5vw,3.75rem);font-weight:500;line-height:1}
+.fact span{display:block;margin-top:8px;font-size:13px;color:var(--muted)}
+@media (min-width:900px){.about{grid-template-columns:1.4fr 1fr;align-items:start}}
+
+/* process */
+.steps{display:grid;gap:1px;margin-top:48px;background:var(--border);border:1px solid var(--border)}
+@media (min-width:640px){.steps{grid-template-columns:1fr 1fr}}
+@media (min-width:1024px){.steps{grid-template-columns:repeat(4,1fr)}}
+.step{padding:28px;background:var(--bg)}
+.step .num{font-size:12px;color:var(--accent)}
+.step h3{margin:48px 0 12px;font-size:24px;font-weight:500;text-transform:uppercase}
+.step p{font-size:14px;color:var(--muted)}
+
+/* stack */
+.stack{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;margin-top:48px;background:var(--border);border:1px solid var(--border)}
+@media (min-width:640px){.stack{grid-template-columns:repeat(3,1fr)}}
+@media (min-width:1024px){.stack{grid-template-columns:repeat(6,1fr)}}
+.tech{display:flex;flex-direction:column;gap:20px;padding:22px;background:var(--bg)}
+.tech b{font-size:22px;font-weight:600;color:var(--accent-2)}
+.tech span{font-size:13px;color:var(--muted)}
+
+/* contact */
+.cta{display:grid;gap:40px}
+.cta h2{margin-top:12px;font-size:clamp(2.5rem,7vw,5.5rem);font-weight:500;text-transform:uppercase;line-height:.95}
+.cta .lead{margin-top:24px;max-width:36rem}
+.channels{border-top:1px solid var(--border)}
+.channel{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;border-bottom:1px solid var(--border);transition:color .15s}
+.channel:hover{color:var(--accent-2)}
+.channel .meta{min-width:88px}
+.channel strong{font-size:clamp(1rem,2vw,1.25rem);font-weight:500;text-align:right;overflow-wrap:anywhere}
+@media (min-width:900px){.cta{grid-template-columns:1.2fr 1fr;align-items:end}}
+
+footer .container{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-top:28px;padding-bottom:28px}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="container nav" aria-label="Main">
+    <a href="#top" class="logo" aria-label="NMY home">NMY<span>.</span></a>
+    <div class="nav-links">
+      <a class="nav-link" href="#services">Services</a>
+      <a class="nav-link" href="#work">Work</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#process">Process</a>
+      <a class="nav-link" href="#stack">Stack</a>
+    </div>
+    <a class="btn btn-ghost" href="#contact">Get in touch</a>
+  </nav>
+</header>
+
+<main id="top">
+
+<section class="hero">
+  <div class="container hero-inner">
+    <div class="hero-top">
+      <p class="label">Software development team</p>
+      <span class="meta">Since 2014 · Worldwide</span>
+    </div>
+    <div class="hero-mid">
+      <p>Engineering products that run real money and real users</p>
+      <h1 class="wordmark">NMY<span>.</span></h1>
+    </div>
+    <div class="hero-bottom">
+      <h2>From idea to production — built by people who ship.</h2>
+      <div class="lead">
+        <p class="muted">We build websites, Telegram bots, crypto exchanges and fintech payment systems — designed, coded and launched by one senior team that has worked together since 2014.</p>
+        <div class="btns">
+          <a class="btn btn-solid" href="#contact">Start a project
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a class="btn btn-ghost" href="#work">See our work</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container block">
+    <div class="block-head">
+      <div>
+        <p class="label">01 / Services</p>
+        <h2 class="title">What we build</h2>
+      </div>
+      <a class="nav-link" href="#contact">Discuss yours →</a>
+    </div>
+    <div class="rows">
+      <a class="row" href="#contact">
+        <span class="num">01</span>
+        <h3>Websites</h3>
+        <p class="muted">Fast, clean websites and web apps — from landing pages to full platforms</p>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="row" href="#contact">
+        <span class="num">02</span>
+        <h3>Telegram Bots</h3>
+        <p class="muted">Bots and Mini Apps for sales, support, payments and automation</p>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="row" href="#contact">
+        <span class="num">03</span>
+        <h3>Crypto Exchanges</h3>
+        <p class="muted">DEX and CEX platforms — trading engines, wallets and smart contracts</p>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+      <a class="row" href="#contact">
+        <span class="num">04</span>
+        <h3>Fintech &amp; Payments</h3>
+        <p class="muted">Payment systems, SEPA transfers and secure financial integrations</p>
+        <span class="arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="container block">
+    <div class="block-head">
+      <div>
+        <p class="label">02 / Work</p>
+        <h2 class="title">Selected projects</h2>
+      </div>
+    </div>
+    <div class="cards">
+      <a class="card" href="https://www.linkedin.com/company/acmcryptosimplified/" target="_blank" rel="noopener">
+        <div><p class="label">Crypto platform</p><h3>ACM Crypto Simplified</h3></div>
+        <span class="go">View project <span aria-hidden="true">↗</span></span>
+      </a>
+      <a class="card" href="https://swag.com/" target="_blank" rel="noopener">
+        <div><p class="label">E-commerce</p><h3>Swag.com</h3></div>
+        <span class="go">View project <span aria-hidden="true">↗</span></span>
+      </a>
+      <a class="card" href="https://bober.tr/" target="_blank" rel="noopener">
+        <div><p class="label">Barbershop CRM</p><h3>Bober</h3></div>
+        <span class="go">View project <span aria-hidden="true">↗</span></span>
+      </a>
+      <a class="card" href="https://getcaptions.io/" target="_blank" rel="noopener">
+        <div><p class="label">AI video captions</p><h3>GetCaptions</h3></div>
+        <span class="go">View project <span aria-hidden="true">↗</span></span>
+      </a>
+    </div>
+    <p class="note muted">Detailed case studies are coming soon.</p>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container block">
+    <p class="label">03 / About</p>
+    <h2 class="title">People behind NMY</h2>
+    <div class="about">
+      <div>
+        <p>NMY is a team of developers who have been building software together since 2014. The name comes from our founder, <a href="https://www.linkedin.com/in/ivan-nemyrovskiy-05b323224/" target="_blank" rel="noopener" style="color:var(--accent-2)">Ivan Nemyrovskyi</a>.</p>
+        <p class="muted" style="margin-top:20px;font-size:1rem">We work as one small senior team: the people you talk to are the people who write your code. No hand-offs, no hidden subcontractors — just direct communication and products that keep working after launch.</p>
+        <div class="btns">
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/ivan-nemyrovskiy-05b323224/" target="_blank" rel="noopener">Founder on LinkedIn ↗</a>
+        </div>
+      </div>
+      <div class="facts">
+        <div class="fact"><strong>2014</strong><span>building together since</span></div>
+        <div class="fact"><strong>4</strong><span>core directions</span></div>
+        <div class="fact"><strong>1</strong><span>team, start to finish</span></div>
+        <div class="fact"><strong>Remote</strong><span>working worldwide</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="container block">
+    <p class="label">04 / Process</p>
+    <h2 class="title">From idea to launch</h2>
+    <div class="steps">
+      <div class="step"><span class="num">01</span><h3>Discovery</h3><p>We dig into your goals, users and constraints, and agree on what success means.</p></div>
+      <div class="step"><span class="num">02</span><h3>Design</h3><p>We map the flows, the interface and the architecture before writing code.</p></div>
+      <div class="step"><span class="num">03</span><h3>Build</h3><p>We develop in short iterations and show you working software every step.</p></div>
+      <div class="step"><span class="num">04</span><h3>Scale</h3><p>We launch, monitor and keep improving the product as it grows.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="stack">
+  <div class="container block">
+    <p class="label">05 / Stack</p>
+    <h2 class="title">Technologies we use</h2>
+    <div class="stack">
+      <div class="tech"><b>Py</b><span>Python</span></div>
+      <div class="tech"><b>JS</b><span>JavaScript</span></div>
+      <div class="tech"><b>PHP</b><span>PHP</span></div>
+      <div class="tech"><b>SQL</b><span>MySQL</span></div>
+      <div class="tech"><b>Re</b><span>React</span></div>
+      <div class="tech"><b>Dj</b><span>Django</span></div>
+      <div class="tech"><b>Node</b><span>Node.js</span></div>
+      <div class="tech"><b>La</b><span>Laravel</span></div>
+      <div class="tech"><b>Sf</b><span>Symfony</span></div>
+      <div class="tech"><b>Mg</b><span>Magento</span></div>
+      <div class="tech"><b>Vue</b><span>Vue.js</span></div>
+      <div class="tech"><b>+</b><span>and more</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container block cta">
+    <div>
+      <p class="label">Next step</p>
+      <h2>Let’s talk about your project</h2>
+      <p class="lead muted">Tell us what you want to build — we’ll come back with a plan, an estimate and clear next steps.</p>
+      <div class="btns">
+        <a class="btn btn-solid" href="mailto:nmy@santinel.me">Email us
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <a class="btn btn-ghost" href="https://wa.me/380932637515" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div class="channels">
+      <a class="channel" href="mailto:nmy@santinel.me"><span class="meta">Email</span><strong>nmy@santinel.me</strong></a>
+      <a class="channel" href="tel:+380932637515"><span class="meta">Phone</span><strong>+380 93 263 75 15</strong></a>
+      <a class="channel" href="https://wa.me/380932637515" target="_blank" rel="noopener"><span class="meta">WhatsApp</span><strong>Message us ↗</strong></a>
+      <a class="channel" href="https://t.me/inemyrovsk" target="_blank" rel="noopener"><span class="meta">Telegram</span><strong>@inemyrovsk ↗</strong></a>
+      <a class="channel" href="https://www.linkedin.com/in/ivan-nemyrovskiy-05b323224/" target="_blank" rel="noopener"><span class="meta">LinkedIn</span><strong>Ivan Nemyrovskyi ↗</strong></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <span class="meta">© 2026 NMY</span>
+    <span class="meta">Software development team · since 2014</span>
+  </div>
+</footer>
+
+</body>
+</html>
