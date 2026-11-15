@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>NMY Agency — Websites, Telegram Bots, Crypto & Fintech Development</title>
 <meta name="description" content="NMY Agency builds websites, Telegram bots, crypto exchanges (DEX & CEX) and fintech payment systems with SEPA. One senior team, building together since 2014.">
-<meta name="author" content="NMY Agency">
 <link rel="canonical" href="https://nmy-solutions.github.io/">
 <meta property="og:title" content="NMY Agency — Software for business, crypto & fintech">
 <meta property="og:description" content="Websites, Telegram bots, crypto exchanges and fintech payment systems. Building together since 2014.">
@@ -15,21 +14,17 @@
 <meta property="og:image" content="https://nmy-solutions.github.io/img/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://nmy-solutions.github.io/img/og.jpg">
 <meta name="theme-color" content="#000000">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Arial Black,Arial,sans-serif' font-size='34' font-weight='900' fill='%23ff1a1a'%3EN%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="css/site.css">
 </head>
 <body>
 
 <header>
   <div class="wrap nav">
-    <a href="#top" class="logo" aria-label="NMY Agency home"><b><span class="red">N</span>MY</b><small>AGENCY</small></a>
+    <a href="#top" class="logo"><b><span class="red">N</span>MY</b><small>AGENCY</small></a>
     <nav class="links" aria-label="Main">
       <a href="#services">Services</a>
       <a href="#work">Portfolio</a>
@@ -38,18 +33,15 @@
       <a href="#faq">FAQ</a>
     </nav>
     <div class="nav-r">
-      <a class="btn btn-red" href="https://t.me/inemyrovsk" target="_blank" rel="noopener">Contact us
-        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
-      </a>
+      <a class="btn btn-red" href="https://t.me/inemyrovsk" target="_blank" rel="noopener">Contact us</a>
       <details class="menu">
-        <summary aria-label="Menu"><svg class="ico" style="width:18px;height:18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></summary>
+        <summary aria-label="Menu"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></summary>
         <nav aria-label="Mobile">
           <a href="#services">Services</a>
           <a href="#work">Portfolio</a>
           <a href="#about">About</a>
           <a href="#process">Process</a>
           <a href="#faq">FAQ</a>
-          <a href="#contact">Contact</a>
         </nav>
       </details>
     </div>
@@ -58,139 +50,82 @@
 
 <main id="top">
 
-<section aria-label="Intro">
+<section class="hero">
   <div class="wrap">
-    <div class="hero-meta"><span>Remote team / Working worldwide</span><span>Web · Bots · Crypto · Fintech</span></div>
     <h1 class="wordmark"><span class="red">N</span>MY<span class="red">.</span> AGENCY</h1>
-    <p class="tagline">Software for business, crypto &amp; fintech<br><span class="red">built to work from day one.</span></p>
     <div class="hero-row">
-      <p class="muted">From a landing page to a crypto exchange.<br>We combine engineering, security and clean design so your product works for your business — since 2014.</p>
+      <div>
+        <p class="tagline">Software for business, crypto &amp; fintech<br><span class="red">built to work from day one.</span></p>
+        <p class="lead muted">Websites, Telegram bots, crypto exchanges and payment systems — built by one senior team since 2014.</p>
+      </div>
       <div class="btns">
-        <a class="btn btn-red" href="https://t.me/inemyrovsk" target="_blank" rel="noopener">Start a project
-          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
-        </a>
-        <a class="btn btn-line" href="#work">See our work
-          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
-        </a>
+        <a class="btn btn-red" href="https://t.me/inemyrovsk" target="_blank" rel="noopener">Start a project</a>
+        <a class="btn btn-out" href="#work">See our work</a>
       </div>
     </div>
   </div>
   <div class="shots">
-    <a class="shot" href="cases/addup.html"><img src="img/cases/addup-1.jpg" alt="AddUp crypto trading platform" width="1440" height="900"><span>AddUp · Crypto trading <span aria-hidden="true">↗</span></span></a>
-    <a class="shot" href="cases/swag.html"><img src="img/cases/swag-1.jpg" alt="Swag.com branded merchandise platform" width="1440" height="900"><span>Swag.com · E-commerce <span aria-hidden="true">↗</span></span></a>
-    <a class="shot" href="cases/crm.html"><img src="img/cases/crm-1.jpg" alt="CRM for barbershops" width="1440" height="900"><span>CRM · Booking system <span aria-hidden="true">↗</span></span></a>
-  </div>
-  <div class="wrap">
-    <div class="hero-foot">
-      <span><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Clear spec · Transparent timelines · One team since 2014</span>
-      <a href="#services">What we build ↓</a>
-    </div>
+    <a class="shot" href="cases/addup.html"><img src="img/cases/addup-1-720.webp" srcset="img/cases/addup-1-720.webp 720w, img/cases/addup-1.webp 1440w" sizes="(min-width:768px) 33vw, 84vw" alt="AddUp crypto trading platform" width="1440" height="900" fetchpriority="high"><span>AddUp · Crypto trading</span></a>
+    <a class="shot" href="cases/swag.html"><img src="img/cases/swag-1-720.webp" srcset="img/cases/swag-1-720.webp 720w, img/cases/swag-1.webp 1440w" sizes="(min-width:768px) 33vw, 84vw" alt="Swag.com branded merchandise platform" width="1440" height="900" loading="lazy"><span>Swag.com · E-commerce</span></a>
+    <a class="shot" href="cases/crm.html"><img src="img/cases/crm-1-720.webp" srcset="img/cases/crm-1-720.webp 720w, img/cases/crm-1.webp 1440w" sizes="(min-width:768px) 33vw, 84vw" alt="Booking and CRM system for barbershops" width="1440" height="900" loading="lazy"><span>CRM · Booking system</span></a>
   </div>
 </section>
 
 <section id="services" class="sec">
   <div class="wrap">
-    <div class="sec-head">
-      <p class="kicker"><b>01</b>/ Services</p>
+    <div class="head">
+      <p class="kicker"><b>01</b> / Services</p>
       <div>
-        <h2>Not just code. The whole system.</h2>
-        <p class="muted">Architecture, development, integrations and support — one team from the first spec to a stable product.</p>
+        <h2 class="title">What we build.</h2>
+        <p class="sub muted">One team from the first spec to a stable product.</p>
       </div>
     </div>
     <div class="svc">
-      <div class="svc-row">
-        <span class="n">01</span>
-        <h3>Websites &amp; Web Apps</h3>
-        <div><p class="muted">Landing pages, corporate sites and full web platforms: fast, responsive and built to turn visitors into customers.</p>
-          <div class="tags"><span>Landing pages</span><span>Corporate sites</span><span>SaaS platforms</span></div></div>
-      </div>
-      <div class="svc-row">
-        <span class="n">02</span>
-        <h3>Telegram Bots</h3>
-        <div><p class="muted">Bots and Mini Apps for sales, support, bookings and payments — with CRM integrations and admin panels.</p>
-          <div class="tags"><span>Bots</span><span>Mini Apps</span><span>Payments in Telegram</span></div></div>
-      </div>
-      <div class="svc-row">
-        <span class="n">03</span>
-        <h3>Crypto Exchanges — DEX &amp; CEX</h3>
-        <div><p class="muted">Centralized and decentralized exchanges: trading engines, wallets, swaps and smart contracts with security at the core.</p>
-          <div class="tags"><span>CEX</span><span>DEX</span><span>Wallets</span><span>Smart contracts</span></div></div>
-      </div>
-      <div class="svc-row">
-        <span class="n">04</span>
-        <h3>Fintech &amp; Payment Systems</h3>
-        <div><p class="muted">Payment gateways, SEPA transfers, balances and reconciliation — reliable money flows for your product.</p>
-          <div class="tags"><span>Payment systems</span><span>SEPA</span><span>Banking integrations</span></div></div>
-      </div>
+      <div class="svc-row"><span class="n">01</span><h3>Websites &amp; Web Apps</h3><p class="muted">Landing pages, company sites and SaaS platforms — fast and responsive.</p></div>
+      <div class="svc-row"><span class="n">02</span><h3>Telegram Bots</h3><p class="muted">Bots and Mini Apps for sales, support, bookings and payments.</p></div>
+      <div class="svc-row"><span class="n">03</span><h3>Crypto Exchanges — DEX &amp; CEX</h3><p class="muted">Trading engines, wallets, swaps and smart contracts.</p></div>
+      <div class="svc-row"><span class="n">04</span><h3>Fintech &amp; Payments</h3><p class="muted">Payment systems, SEPA transfers and banking integrations.</p></div>
     </div>
   </div>
 </section>
 
 <section id="work" class="sec">
   <div class="wrap">
-    <div class="sec-head">
-      <p class="kicker"><b>02</b>/ Portfolio</p>
+    <div class="head">
+      <p class="kicker"><b>02</b> / Portfolio</p>
       <div>
-        <h2>Different businesses. Real products.</h2>
-        <p class="muted">From crypto trading and e-commerce to CRM, AI and marketing automation. Not mockups — live products used by real customers.</p>
+        <h2 class="title">Real products, live today.</h2>
+        <p class="sub muted">Open any project to see the details.</p>
       </div>
     </div>
     <div class="slider" id="slider" tabindex="0" aria-label="Projects">
       <a class="case" href="cases/addup.html">
-        <div class="pic"><img src="img/cases/addup-1.jpg" alt="AddUp crypto trading platform homepage" width="1440" height="900" loading="lazy"></div>
-        <span class="type">01 / Crypto</span>
-        <h3>AddUp</h3>
-        <p class="muted">Cryptocurrency trading platform with web and mobile apps</p>
-        <p class="hl">Spot trading on 1,000+ assets</p>
-        <span class="more">View case →</span>
+        <div class="pic"><img src="img/cases/addup-1-720.webp" srcset="img/cases/addup-1-720.webp 720w, img/cases/addup-1.webp 1440w" sizes="(min-width:1100px) 31vw, (min-width:768px) 46vw, 84vw" alt="AddUp crypto trading platform" width="1440" height="900" loading="lazy"></div>
+        <span class="type">Crypto</span><h3>AddUp</h3><p class="muted">Crypto trading platform with web and mobile apps</p><span class="more">View case →</span>
       </a>
       <a class="case" href="cases/swag.html">
-        <div class="pic"><img src="img/cases/swag-1.jpg" alt="Swag.com branded merchandise platform homepage" width="1440" height="900" loading="lazy"></div>
-        <span class="type">02 / E-commerce</span>
-        <h3>Swag.com</h3>
-        <p class="muted">All-in-one platform for custom branded merchandise</p>
-        <p class="hl">Shop, store and ship company swag worldwide</p>
-        <span class="more">View case →</span>
+        <div class="pic"><img src="img/cases/swag-1-720.webp" srcset="img/cases/swag-1-720.webp 720w, img/cases/swag-1.webp 1440w" sizes="(min-width:1100px) 31vw, (min-width:768px) 46vw, 84vw" alt="Swag.com branded merchandise platform" width="1440" height="900" loading="lazy"></div>
+        <span class="type">E-commerce</span><h3>Swag.com</h3><p class="muted">Platform for custom branded merchandise</p><span class="more">View case →</span>
       </a>
       <a class="case" href="cases/crm.html">
-        <div class="pic"><img src="img/cases/crm-1.jpg" alt="Booking and CRM system homepage" width="1440" height="900" loading="lazy"></div>
-        <span class="type">03 / SaaS</span>
-        <h3>CRM</h3>
-        <p class="muted">Booking and CRM system for barbershops</p>
-        <p class="hl">Online booking, Telegram reminders, client cards &amp; payroll</p>
-        <span class="more">View case →</span>
+        <div class="pic"><img src="img/cases/crm-1-720.webp" srcset="img/cases/crm-1-720.webp 720w, img/cases/crm-1.webp 1440w" sizes="(min-width:1100px) 31vw, (min-width:768px) 46vw, 84vw" alt="Booking and CRM system for barbershops" width="1440" height="900" loading="lazy"></div>
+        <span class="type">SaaS</span><h3>CRM</h3><p class="muted">Booking and CRM system for barbershops</p><span class="more">View case →</span>
       </a>
       <a class="case" href="cases/formgong.html">
-        <div class="pic"><img src="img/cases/formgong-1.jpg" alt="Formgong form-to-Telegram service homepage" width="1440" height="900" loading="lazy"></div>
-        <span class="type">04 / Telegram · SaaS</span>
-        <h3>Formgong</h3>
-        <p class="muted">Every website form submission delivered to Telegram and email</p>
-        <p class="hl">Works with WordPress, Tilda, Wix, Shopify and plain HTML</p>
-        <span class="more">View case →</span>
+        <div class="pic"><img src="img/cases/formgong-1-720.webp" srcset="img/cases/formgong-1-720.webp 720w, img/cases/formgong-1.webp 1440w" sizes="(min-width:1100px) 31vw, (min-width:768px) 46vw, 84vw" alt="Formgong form-to-Telegram service" width="1440" height="900" loading="lazy"></div>
+        <span class="type">Telegram · SaaS</span><h3>Formgong</h3><p class="muted">Website forms delivered to Telegram and email</p><span class="more">View case →</span>
       </a>
       <a class="case" href="cases/swiftmail.html">
-        <div class="pic"><img src="img/cases/swiftmail-1.jpg" alt="SwiftMail AI marketing automation homepage" width="1440" height="900" loading="lazy"></div>
-        <span class="type">05 / AI · Marketing</span>
-        <h3>SwiftMail</h3>
-        <p class="muted">AI marketing automation for websites</p>
-        <p class="hl">Email, SMS, push and popups from one snippet</p>
-        <span class="more">View case →</span>
+        <div class="pic"><img src="img/cases/swiftmail-1-720.webp" srcset="img/cases/swiftmail-1-720.webp 720w, img/cases/swiftmail-1.webp 1440w" sizes="(min-width:1100px) 31vw, (min-width:768px) 46vw, 84vw" alt="SwiftMail AI marketing automation" width="1440" height="900" loading="lazy"></div>
+        <span class="type">AI · Marketing</span><h3>SwiftMail</h3><p class="muted">AI marketing automation for websites</p><span class="more">View case →</span>
       </a>
       <a class="case" href="cases/leanwisely.html">
-        <div class="pic"><img src="img/cases/leanwisely-1.jpg" alt="Lean Wisely content website homepage" width="1440" height="900" loading="lazy"></div>
-        <span class="type">06 / Website</span>
-        <h3>Lean Wisely</h3>
-        <p class="muted">Editorial website about healthy, sustainable weight loss</p>
-        <p class="hl">Research-based articles, calculators &amp; video</p>
-        <span class="more">View case →</span>
+        <div class="pic"><img src="img/cases/leanwisely-1-720.webp" srcset="img/cases/leanwisely-1-720.webp 720w, img/cases/leanwisely-1.webp 1440w" sizes="(min-width:1100px) 31vw, (min-width:768px) 46vw, 84vw" alt="Lean Wisely content website" width="1440" height="900" loading="lazy"></div>
+        <span class="type">Website</span><h3>Lean Wisely</h3><p class="muted">Editorial website about healthy weight loss</p><span class="more">View case →</span>
       </a>
       <a class="case" href="cases/carrierscan.html">
-        <div class="pic"><img src="img/cases/carrierscan-1.jpg" alt="CarrierScan AI text detector homepage" width="1440" height="900" loading="lazy"></div>
-        <span class="type">07 / AI</span>
-        <h3>CarrierScan</h3>
-        <p class="muted">AI text detector for ChatGPT, Gemini and Claude</p>
-        <p class="hl">Free check in 7 languages, no sign-up</p>
-        <span class="more">View case →</span>
+        <div class="pic"><img src="img/cases/carrierscan-1-720.webp" srcset="img/cases/carrierscan-1-720.webp 720w, img/cases/carrierscan-1.webp 1440w" sizes="(min-width:1100px) 31vw, (min-width:768px) 46vw, 84vw" alt="CarrierScan AI text detector" width="1440" height="900" loading="lazy"></div>
+        <span class="type">AI</span><h3>CarrierScan</h3><p class="muted">AI text detector for ChatGPT, Gemini and Claude</p><span class="more">View case →</span>
       </a>
     </div>
     <div class="slider-bar">
@@ -205,64 +140,43 @@
 
 <section id="about" class="sec">
   <div class="wrap">
-    <div class="sec-head">
-      <p class="kicker"><b>03</b>/ About</p>
-      <div><h2>Sense first. Then code.</h2></div>
-    </div>
-    <div class="approach">
-      <div class="badge">
-        <p class="muted">NMY — named after our founder, Ivan Nemyrovskyi</p>
-        <div><b>2014</b><p class="muted" style="margin-top:16px">A team of developers building products together ever since.</p></div>
-      </div>
+    <div class="head">
+      <p class="kicker"><b>03</b> / About</p>
       <div>
-        <p class="lead-q">Good software is designed before it is coded. We plan the architecture, data and money flows first — so the product is stable on launch day and easy to grow after it.</p>
-        <div class="points">
-          <div class="point"><span class="n">01</span><div><h3>Security at the core</h3><p class="muted">Payments, wallets and user data are designed to be safe from day one, not patched later.</p></div></div>
-          <div class="point"><span class="n">02</span><div><h3>Full cycle, one team</h3><p class="muted">From spec and prototype to code, launch and day-to-day support — the people you talk to write your code.</p></div></div>
-          <div class="point"><span class="n">03</span><div><h3>Experience across markets</h3><p class="muted">Crypto, fintech, e-commerce, SaaS, CRM and AI products for clients worldwide.</p></div></div>
-        </div>
+        <h2 class="title">One team since 2014.</h2>
+        <p class="sub muted">NMY is named after our founder, Ivan Nemyrovskyi. The people you talk to are the people who write your code — we plan the architecture first, so the product is stable on launch day and easy to grow.</p>
       </div>
     </div>
     <div class="stats">
       <div><b>2014</b><span>Building since</span></div>
       <div><b>12+</b><span>Years of experience</span></div>
-      <div><b>7</b><span>Live products in portfolio</span></div>
-      <div><b>1</b><span>Team, start to finish</span></div>
+      <div><b>7</b><span>Live products</span></div>
     </div>
   </div>
 </section>
 
 <section id="process" class="sec">
   <div class="wrap">
-    <div class="sec-head">
-      <p class="kicker"><b>04</b>/ Process</p>
-      <div>
-        <h2>From first call to launch.</h2>
-        <p class="muted">Clear stages, clear decisions and timelines agreed up front.</p>
-      </div>
+    <div class="head">
+      <p class="kicker"><b>04</b> / Process</p>
+      <div><h2 class="title">From first message to launch.</h2></div>
     </div>
     <div class="steps">
-      <div class="step"><span class="n">01</span><h3>Discovery</h3><p class="muted">We dig into your goals, users and risks and agree on what success means.</p></div>
-      <div class="step"><span class="n">02</span><h3>Design</h3><p class="muted">We map the flows, the interface and the architecture before writing code.</p></div>
-      <div class="step"><span class="n">03</span><h3>Build</h3><p class="muted">We develop in short iterations and show you working software every step.</p></div>
-      <div class="step"><span class="n">04</span><h3>Launch &amp; Scale</h3><p class="muted">We launch, monitor and keep improving the product as it grows.</p></div>
+      <div class="step"><span class="n">01</span><h3>Discovery</h3><p class="muted">Goals, users, risks and what success means.</p></div>
+      <div class="step"><span class="n">02</span><h3>Design</h3><p class="muted">Flows, interface and architecture before code.</p></div>
+      <div class="step"><span class="n">03</span><h3>Build</h3><p class="muted">Short iterations with working software every step.</p></div>
+      <div class="step"><span class="n">04</span><h3>Launch</h3><p class="muted">Release, monitoring and growth after launch.</p></div>
     </div>
-    <div class="note"><b>+</b><p class="muted"><strong style="color:#fff">Technologies we work with:</strong> Python, JavaScript, PHP, MySQL, React, Django, Node.js, Laravel, Symfony, Magento, Vue.js — and whatever your product already runs on.</p></div>
-  </div>
-  <div class="marquee" aria-hidden="true">
-    <div class="track">
-      <span>Python</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>React</span><span>Django</span><span>Node.js</span><span>Laravel</span><span>Symfony</span><span>Magento</span><span>Vue.js</span>
-      <span>Python</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>React</span><span>Django</span><span>Node.js</span><span>Laravel</span><span>Symfony</span><span>Magento</span><span>Vue.js</span>
-    </div>
+    <div class="chips" aria-label="Technologies"><span>Python</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>React</span><span>Django</span><span>Node.js</span><span>Laravel</span><span>Symfony</span><span>Magento</span><span>Vue.js</span></div>
   </div>
 </section>
 
 <section id="contact" class="band">
   <div class="wrap">
     <div>
-      <p class="kicker"><b>05</b>/ Contact</p>
+      <p class="kicker"><b>05</b> / Contact</p>
       <h2>Let’s talk about your project.</h2>
-      <p class="lead">Tap the button, write a couple of lines about your idea — we’ll reply with questions, a plan and an estimate.</p>
+      <p class="lead">Write a couple of lines about your idea — we’ll reply with questions, a plan and an estimate.</p>
     </div>
     <div>
       <a class="btn btn-dark btn-xl" href="https://t.me/inemyrovsk" target="_blank" rel="noopener">
@@ -274,32 +188,28 @@
   </div>
 </section>
 
-<section id="faq" class="sec" style="border-top:0">
+<section id="faq" class="sec">
   <div class="wrap">
-    <div class="sec-head">
-      <p class="kicker"><b>06</b>/ FAQ</p>
+    <div class="head">
+      <p class="kicker"><b>06</b> / FAQ</p>
       <div>
-        <h2>Good to know before we start.</h2>
+        <h2 class="title">Good to know.</h2>
         <div class="faq">
           <details>
-            <summary><span class="n">01</span>What kind of projects do you take on?<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
-            <p class="muted">Websites and web apps, Telegram bots and Mini Apps, crypto exchanges (DEX and CEX) and fintech payment systems, including SEPA. If your idea is close to one of these, we’re happy to talk.</p>
+            <summary>What projects do you take on?<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+            <p class="muted">Websites and web apps, Telegram bots and Mini Apps, crypto exchanges (DEX and CEX) and fintech payment systems, including SEPA.</p>
           </details>
           <details>
-            <summary><span class="n">02</span>How does a project start?<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
-            <p class="muted">Message us on Telegram and tell us about your idea. We’ll have a short call about your goals, then come back with a plan, an estimate and the next steps.</p>
+            <summary>How does a project start?<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+            <p class="muted">Message us on Telegram. After a short call about your goals we send a plan, an estimate and the next steps.</p>
           </details>
           <details>
-            <summary><span class="n">03</span>Do you work with clients outside Ukraine?<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
-            <p class="muted">Yes. We work remotely with clients worldwide and communicate in English.</p>
+            <summary>Can you take over an existing project?<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+            <p class="muted">Yes. We review the code and architecture first, tell you honestly what we find, then agree on the way forward.</p>
           </details>
           <details>
-            <summary><span class="n">04</span>Can you take over an existing project?<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
-            <p class="muted">Yes. We start by reviewing the code and architecture, tell you honestly what we find, and then agree on how to move forward.</p>
-          </details>
-          <details>
-            <summary><span class="n">05</span>Do you support the product after launch?<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
-            <p class="muted">Yes. We can monitor, fix and keep developing the product after release, so it keeps working as your business grows.</p>
+            <summary>Do you support the product after launch?<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+            <p class="muted">Yes — monitoring, fixes and new features as your business grows.</p>
           </details>
         </div>
       </div>
@@ -311,28 +221,23 @@
 
 <footer>
   <div class="wrap">
-    <a href="#top" class="logo" aria-label="Back to top"><b><span class="red">N</span>MY</b><small>AGENCY</small></a>
-    <nav aria-label="Footer"><a href="#services">Services</a><a href="#work">Portfolio</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
-    <span>© 2026 NMY Agency · Software development since 2014</span>
+    <a href="#top" class="logo"><b><span class="red">N</span>MY</b><small>AGENCY</small></a>
+    <span>© 2026 NMY Agency</span>
   </div>
 </footer>
-
-<a class="tg" href="https://t.me/inemyrovsk" target="_blank" rel="noopener" aria-label="Message us on Telegram">
-  <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M21.9 4.3 18.6 20c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.2-8.3c.4-.4-.1-.6-.6-.2L6.1 13.6 1.2 12c-1.1-.3-1.1-1.1.2-1.6L20.5 3c.9-.3 1.7.2 1.4 1.3z"/></svg>
-</a>
 
 <script>
 // portfolio slider: arrows scroll one card, counter follows the first visible card
 const s = document.getElementById('slider'), cards = s.children;
+const $ = id => document.getElementById(id);
 const step = () => cards[0].offsetWidth + parseFloat(getComputedStyle(s).columnGap);
-document.getElementById('total').textContent = String(cards.length).padStart(2, '0');
-document.getElementById('prev').onclick = () => s.scrollBy({ left: -step() });
-document.getElementById('next').onclick = () => s.scrollBy({ left: step() });
+$('total').textContent = String(cards.length).padStart(2, '0');
+$('prev').onclick = () => s.scrollBy({ left: -step(), behavior: 'smooth' });
+$('next').onclick = () => s.scrollBy({ left: step(), behavior: 'smooth' });
 const sync = () => {
-  const i = Math.round(s.scrollLeft / step());
-  document.getElementById('cur').textContent = String(i + 1).padStart(2, '0');
-  document.getElementById('prev').disabled = s.scrollLeft < 4;
-  document.getElementById('next').disabled = s.scrollLeft + s.clientWidth >= s.scrollWidth - 4;
+  $('cur').textContent = String(Math.round(s.scrollLeft / step()) + 1).padStart(2, '0');
+  $('prev').disabled = s.scrollLeft < 4;
+  $('next').disabled = s.scrollLeft + s.clientWidth >= s.scrollWidth - 4;
 };
 s.addEventListener('scroll', sync, { passive: true });
 addEventListener('resize', sync);
