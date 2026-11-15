@@ -10,7 +10,7 @@
 <meta property="og:description" content="Websites, Telegram bots, crypto exchanges and fintech payment systems. Building together since 2014.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="NMY Agency">
-<meta property="og:image" content="img/alphalox.jpg">
+<meta property="og:image" content="img/addup.jpg">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#000000">
@@ -35,6 +35,7 @@ html{scroll-behavior:smooth;scroll-padding-top:84px}
 body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{color:inherit;text-decoration:none}
 img{display:block;max-width:100%}
+button{font:inherit;color:inherit}
 :focus-visible{outline:2px solid var(--red);outline-offset:3px}
 h1,h2,h3,p{margin:0}
 .wrap{width:100%;max-width:1440px;margin:0 auto;padding-inline:16px}
@@ -44,13 +45,17 @@ h1,h2,h3,p{margin:0}
 .ico{width:14px;height:14px;flex:none}
 
 /* buttons */
-.btn{display:inline-flex;align-items:center;gap:10px;height:40px;padding:0 16px;border-radius:8px;font-size:15px;font-weight:500;white-space:nowrap;transition:background .2s,box-shadow .2s,color .2s,border-color .2s}
+.btn{display:inline-flex;align-items:center;gap:10px;height:42px;padding:0 18px;border-radius:8px;font-size:15px;font-weight:500;white-space:nowrap;transition:background .2s,box-shadow .2s,color .2s,border-color .2s}
 .btn-red{background:var(--red);color:#fff}
 .btn-red:hover{background:var(--red-2);box-shadow:0 0 28px rgb(255 26 26 / .45)}
-.btn-line{color:#fff;border:1px solid transparent}
+.btn-line{color:#fff}
 .btn-line:hover{color:var(--red)}
-.btn-out{border:1px solid var(--border)}
-.btn-out:hover{border-color:var(--red);color:var(--red)}
+.btn-out{border:1px solid var(--border);background:var(--card)}
+.btn-out:hover{border-color:var(--red)}
+.btn-dark{background:#111;color:#fff}
+.btn-dark:hover{background:#000}
+.btn-white{border:1px solid rgb(255 255 255 / .55);color:#fff}
+.btn-white:hover{background:#fff;color:var(--red)}
 
 /* header */
 header{position:sticky;top:0;z-index:20;background:rgb(0 0 0 / .85);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
@@ -60,7 +65,15 @@ header{position:sticky;top:0;z-index:20;background:rgb(0 0 0 / .85);backdrop-fil
 .logo small{font-size:7px;font-weight:800;letter-spacing:.35em;margin-top:2px}
 .links{display:none;gap:28px;font-size:15px}
 .links a:hover{color:var(--red)}
-@media (min-width:960px){.links{display:flex}}
+.nav-r{display:flex;align-items:center;gap:10px}
+.menu{position:relative}
+.menu summary{display:grid;place-items:center;width:42px;height:42px;border:1px solid var(--border);border-radius:8px;cursor:pointer;list-style:none}
+.menu summary::-webkit-details-marker{display:none}
+.menu nav{position:absolute;right:0;top:52px;display:grid;min-width:200px;padding:8px;background:#0a0a0a;border:1px solid var(--border);border-radius:10px}
+.menu nav a{padding:10px 12px;border-radius:6px}
+.menu nav a:hover{background:#161616;color:var(--red)}
+@media (min-width:1024px){.links{display:flex}.menu{display:none}}
+@media (max-width:420px){.nav-r .btn-red{padding:0 12px;font-size:14px}}
 
 /* hero */
 .hero-meta{display:flex;justify-content:space-between;gap:16px;padding-top:48px;font-size:12px;font-weight:500;text-transform:uppercase;color:#d4d4d4}
@@ -80,16 +93,16 @@ header{position:sticky;top:0;z-index:20;background:rgb(0 0 0 / .85);backdrop-fil
 .shot{position:relative;display:block;aspect-ratio:16/9.3;overflow:hidden;scroll-snap-align:start;background:var(--card)}
 .shot img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .6s}
 .shot:hover img{transform:scale(1.04)}
-.shot span{position:absolute;left:14px;right:14px;bottom:12px;display:flex;justify-content:space-between;align-items:center;padding:10px 14px;background:rgb(20 20 20 / .88);backdrop-filter:blur(8px);border:1px solid rgb(255 255 255 / .08);font-size:14px}
-.hero-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-block:22px;border-bottom:1px solid var(--border);font-size:13px;color:var(--muted)}
+.shot>span{position:absolute;left:14px;right:14px;bottom:12px;display:flex;justify-content:space-between;align-items:center;padding:10px 14px;background:rgb(20 20 20 / .88);backdrop-filter:blur(8px);border:1px solid rgb(255 255 255 / .08);font-size:14px}
+.hero-foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;padding-block:22px;font-size:13px;color:var(--muted)}
 .hero-foot span{display:flex;align-items:center;gap:8px}
 .hero-foot a:hover{color:#fff}
 
 /* sections */
-.sec{padding-block:96px;border-bottom:1px solid var(--border)}
+.sec{padding-block:96px;border-top:1px solid var(--border)}
 @media (min-width:768px){.sec{padding-block:128px}}
 .sec-head{display:grid;gap:20px}
-@media (min-width:960px){.sec-head{grid-template-columns:362px 1fr}}
+@media (min-width:1024px){.sec-head{grid-template-columns:362px 1fr}}
 .kicker{display:flex;gap:12px;padding-top:14px;font-size:12px;font-weight:500;text-transform:uppercase}
 .kicker b{color:var(--red);font-weight:500}
 .sec-head h2{font-family:var(--head);font-weight:800;font-size:clamp(2rem,4.2vw,3.25rem);line-height:1.12}
@@ -103,24 +116,32 @@ header{position:sticky;top:0;z-index:20;background:rgb(0 0 0 / .85);backdrop-fil
 .tags{display:flex;flex-wrap:wrap;gap:8px 24px;margin-top:18px;font-size:13px;font-weight:500}
 .tags span{display:flex;align-items:center;gap:8px}
 .tags span::after{content:"";width:6px;height:6px;border-radius:50%;background:var(--red)}
-@media (min-width:960px){.svc-row{grid-template-columns:80px 1fr 1.25fr;gap:0 0}}
+@media (min-width:1024px){.svc-row{grid-template-columns:80px 1fr 1.25fr}}
 
-/* work */
-.grid{display:grid;gap:44px 24px;margin-top:56px}
-@media (min-width:768px){.grid{grid-template-columns:1fr 1fr}}
-.case .pic{aspect-ratio:16/9.3;overflow:hidden;background:var(--card)}
+/* portfolio slider */
+.slider{display:grid;grid-auto-flow:column;grid-auto-columns:88%;gap:24px;margin-top:56px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none}
+.slider::-webkit-scrollbar{display:none}
+@media (min-width:768px){.slider{grid-auto-columns:calc((100% - 24px)/2)}}
+@media (min-width:1100px){.slider{grid-auto-columns:calc((100% - 48px)/3)}}
+.case{scroll-snap-align:start}
+.case .pic{aspect-ratio:16/9.6;overflow:hidden;background:var(--card);border:1px solid var(--border)}
 .case .pic img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .6s}
 .case:hover .pic img{transform:scale(1.04)}
 .case .type{display:block;margin-top:22px;font-size:13px;color:var(--muted)}
-.case h3{margin-top:10px;font-family:var(--head);font-weight:700;font-size:clamp(1.4rem,2.2vw,1.75rem);line-height:1.2}
-.case p{margin-top:12px}
+.case h3{margin-top:10px;font-family:var(--head);font-weight:700;font-size:clamp(1.35rem,2vw,1.6rem);line-height:1.2}
+.case p{margin-top:12px;font-size:15px}
 .case .hl{margin-top:10px;font-size:14px;color:var(--red)}
-.pic.blank{display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 30% 20%,rgb(255 26 26 / .35),transparent 55%),linear-gradient(135deg,#141414,#050505);border:1px solid var(--border)}
-.pic.blank b{font-family:var(--head);font-weight:900;font-size:clamp(2.5rem,6vw,4.5rem);letter-spacing:-.02em}
+.slider-bar{display:flex;justify-content:space-between;align-items:center;margin-top:44px}
+.count{font-size:15px;color:var(--muted)}
+.count b{color:#fff;font-weight:500}
+.arrows{display:flex;gap:8px}
+.arrows button{display:grid;place-items:center;width:44px;height:44px;background:var(--card);border:1px solid var(--border);border-radius:6px;cursor:pointer;transition:border-color .2s,opacity .2s}
+.arrows button:hover:not(:disabled){border-color:var(--red)}
+.arrows button:disabled{opacity:.35;cursor:default}
 
 /* approach */
 .approach{display:grid;gap:48px;margin-top:56px}
-@media (min-width:960px){.approach{grid-template-columns:1fr 1.15fr;gap:80px}}
+@media (min-width:1024px){.approach{grid-template-columns:1fr 1.15fr;gap:80px}}
 .badge{position:relative;display:flex;flex-direction:column;justify-content:space-between;min-height:420px;padding:36px;overflow:hidden;background:linear-gradient(160deg,#151515,#050505);border:1px solid var(--border)}
 .badge::before{content:"";position:absolute;width:420px;height:420px;right:-140px;top:-140px;background:radial-gradient(circle,rgb(255 26 26 / .45),transparent 65%);animation:glow 6s ease-in-out infinite alternate}
 @keyframes glow{to{opacity:.45;transform:scale(1.15)}}
@@ -138,14 +159,15 @@ header{position:sticky;top:0;z-index:20;background:rgb(0 0 0 / .85);backdrop-fil
 .stats span{display:block;margin-top:12px;font-size:13px;color:var(--muted)}
 
 /* process */
-.steps{display:grid;gap:16px;margin-top:56px}
+.steps{display:grid;gap:36px 24px;margin-top:56px}
 @media (min-width:640px){.steps{grid-template-columns:1fr 1fr}}
 @media (min-width:1100px){.steps{grid-template-columns:repeat(4,1fr)}}
-.step{padding:28px;background:var(--card);border:1px solid var(--border);border-radius:12px;transition:border-color .2s}
-.step:hover{border-color:var(--red)}
-.step .n{font-family:var(--head);font-weight:900;font-size:44px;color:var(--red);line-height:1}
-.step h3{margin-top:36px;font-family:var(--head);font-weight:700;font-size:21px}
-.step p{margin-top:10px;font-size:14px}
+.step{padding-top:22px;border-top:1px solid var(--red)}
+.step .n{font-size:12px;color:var(--red)}
+.step h3{margin-top:26px;font-family:var(--head);font-weight:700;font-size:19px}
+.step p{margin-top:12px;font-size:14px}
+.note{display:flex;gap:18px;align-items:flex-start;margin-top:56px;padding:24px;background:var(--card);border:1px solid var(--border);font-size:14px}
+.note b{color:var(--red);font-size:22px;line-height:1}
 
 /* stack */
 .marquee{margin-top:56px;overflow:hidden;border-block:1px solid var(--border);mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
@@ -154,21 +176,42 @@ header{position:sticky;top:0;z-index:20;background:rgb(0 0 0 / .85);backdrop-fil
 .track span::after{content:"";width:10px;height:10px;border-radius:50%;background:var(--red)}
 @keyframes marquee{to{transform:translateX(-50%)}}
 
-/* contact */
-.cta{display:grid;gap:56px}
-@media (min-width:960px){.cta{grid-template-columns:1.2fr 1fr;align-items:end}}
-.cta h2{margin-top:20px;font-family:var(--head);font-weight:900;font-size:clamp(2.6rem,6.5vw,5.6rem);line-height:1}
-.cta .lead{max-width:34rem;margin-top:24px;font-size:17px}
-.ch{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:22px;border-bottom:1px solid var(--border);transition:color .2s}
-.ch:first-child{border-top:1px solid var(--border)}
-.ch:hover{color:var(--red)}
-.ch span{font-size:12px;text-transform:uppercase;color:var(--muted)}
-.ch strong{font-family:var(--head);font-weight:700;font-size:clamp(1rem,2vw,1.35rem);text-align:right;overflow-wrap:anywhere}
+/* red contact band */
+.band{background:var(--red);color:#fff}
+.band .wrap{display:grid;gap:48px;padding-block:96px}
+@media (min-width:1024px){.band .wrap{grid-template-columns:1.15fr 1fr;align-items:center;padding-block:120px}}
+.band .kicker{padding:0}
+.band .kicker b{color:#fff}
+.band h2{margin-top:22px;font-family:var(--head);font-weight:800;font-size:clamp(2.2rem,5vw,4rem);line-height:1.05}
+.band .lead{max-width:32rem;margin-top:22px;font-size:17px;color:rgb(255 255 255 / .85)}
+.ch{display:flex;justify-content:space-between;align-items:center;gap:16px;padding-block:24px;border-bottom:1px solid rgb(255 255 255 / .3)}
+.ch:first-child{border-top:1px solid rgb(255 255 255 / .3)}
+.ch span{font-size:12px;text-transform:uppercase;color:rgb(255 255 255 / .75)}
+.ch strong{font-family:var(--head);font-weight:800;font-size:clamp(1.15rem,2.4vw,1.75rem);text-align:right;overflow-wrap:anywhere;transition:opacity .2s}
+.ch:hover strong{opacity:.75}
 
+/* faq */
+.faq{margin-top:20px}
+.faq details{border-bottom:1px solid var(--border)}
+.faq summary{display:grid;grid-template-columns:34px 1fr 24px;align-items:center;padding-block:24px;cursor:pointer;list-style:none;font-size:17px;font-weight:500}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .n{font-size:12px;color:var(--red)}
+.faq summary svg{transition:transform .2s}
+.faq details[open] summary svg{transform:rotate(180deg)}
+.faq details p{padding:0 24px 24px 34px;max-width:52rem}
+
+/* floating telegram */
+.tg{position:fixed;left:20px;bottom:20px;z-index:30;display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:#2aabee;box-shadow:0 8px 28px rgb(42 171 238 / .45);transition:transform .2s}
+.tg:hover{transform:scale(1.08)}
+.tg svg{width:26px;height:26px}
+
+footer{border-top:1px solid var(--border)}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;padding-block:36px;font-size:13px;color:var(--muted)}
+footer nav{display:flex;flex-wrap:wrap;gap:20px}
+footer nav a:hover{color:#fff}
 
 @media (prefers-reduced-motion:reduce){
-  html{scroll-behavior:auto}
+  html,.slider{scroll-behavior:auto}
   *,*::before,*::after{animation:none!important;transition:none!important}
 }
 </style>
@@ -176,19 +219,32 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-ite
 <body>
 
 <header>
-  <nav class="wrap nav" aria-label="Main">
+  <div class="wrap nav">
     <a href="#top" class="logo" aria-label="NMY Agency home"><b><span class="red">N</span>MY</b><small>AGENCY</small></a>
-    <div class="links">
+    <nav class="links" aria-label="Main">
       <a href="#services">Services</a>
       <a href="#work">Portfolio</a>
-      <a href="#approach">About</a>
+      <a href="#about">About</a>
       <a href="#process">Process</a>
-      <a href="#stack">Stack</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-r">
+      <a class="btn btn-red" href="#contact">Contact us
+        <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
+      </a>
+      <details class="menu">
+        <summary aria-label="Menu"><svg class="ico" style="width:18px;height:18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></summary>
+        <nav aria-label="Mobile">
+          <a href="#services">Services</a>
+          <a href="#work">Portfolio</a>
+          <a href="#about">About</a>
+          <a href="#process">Process</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </details>
     </div>
-    <a class="btn btn-red" href="#contact">Contact us
-      <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
-    </a>
-  </nav>
+  </div>
 </header>
 
 <main id="top">
@@ -197,7 +253,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-ite
   <div class="wrap">
     <div class="hero-meta"><span>Remote team / Working worldwide</span><span>Web · Bots · Crypto · Fintech</span></div>
     <h1 class="wordmark"><span class="red">N</span>MY<span class="red">.</span> AGENCY</h1>
-    <p class="tagline">Software for business, crypto &amp; fintech <s>that breaks in production</s><br><span class="red">that just works</span></p>
+    <p class="tagline">Software for business, crypto &amp; fintech <s>that breaks</s><br><span class="red">that just works</span></p>
     <div class="hero-row">
       <p class="muted">From a landing page to a crypto exchange.<br>We combine engineering, security and clean design so your product works for your business — since 2014.</p>
       <div class="btns">
@@ -211,9 +267,9 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-ite
     </div>
   </div>
   <div class="shots">
-    <a class="shot" href="#work"><img src="img/alphalox.jpg" alt="ACM Finance (AlphaLOX) crypto exchange homepage" width="1440" height="900"><span>ACM · Crypto exchange <span aria-hidden="true">↓</span></span></a>
-    <a class="shot" href="#work"><img src="img/bober.jpg" alt="Bober barbershop CRM homepage" width="1440" height="900"><span>Bober · CRM <span aria-hidden="true">↓</span></span></a>
-    <a class="shot" href="#work"><img src="img/getcaptions.jpg" alt="GetCaptions AI video subtitles homepage" width="1440" height="900"><span>GetCaptions · AI SaaS <span aria-hidden="true">↓</span></span></a>
+    <a class="shot" href="#work"><img src="img/addup.jpg" alt="AddUp crypto trading platform" width="1440" height="900"><span>AddUp · Crypto trading <span aria-hidden="true">↓</span></span></a>
+    <a class="shot" href="#work"><img src="img/crm.jpg" alt="CRM for barbershops" width="1440" height="900"><span>CRM · Booking system <span aria-hidden="true">↓</span></span></a>
+    <a class="shot" href="#work"><img src="img/swiftmail.jpg" alt="SwiftMail AI marketing automation" width="1440" height="900"><span>SwiftMail · AI marketing <span aria-hidden="true">↓</span></span></a>
   </div>
   <div class="wrap">
     <div class="hero-foot">
@@ -237,7 +293,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-ite
         <span class="n">01</span>
         <h3>Websites &amp; Web Apps</h3>
         <div><p class="muted">Landing pages, corporate sites and full web platforms: fast, responsive and built to turn visitors into customers.</p>
-          <div class="tags"><span>Landing pages</span><span>Corporate sites</span><span>Web platforms</span></div></div>
+          <div class="tags"><span>Landing pages</span><span>Corporate sites</span><span>SaaS platforms</span></div></div>
       </div>
       <div class="svc-row">
         <span class="n">02</span>
@@ -267,43 +323,57 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-ite
       <p class="kicker"><b>02</b>/ Portfolio</p>
       <div>
         <h2>Different businesses. Real products.</h2>
-        <p class="muted">From crypto exchanges to CRM and AI. Not mockups — live products used by real customers.</p>
+        <p class="muted">From crypto trading to CRM, AI and marketing automation. Not mockups — live products used by real customers.</p>
       </div>
     </div>
-    <div class="grid">
+    <div class="slider" id="slider" tabindex="0" aria-label="Projects">
       <article class="case">
-        <div class="pic"><img src="img/alphalox.jpg" alt="ACM Finance (AlphaLOX) crypto exchange homepage" width="1440" height="900" loading="lazy"></div>
-        <span class="type">01 / Crypto exchange</span>
-        <h3>ACM Crypto Simplified</h3>
-        <p class="muted">EU crypto exchange with spot, futures, savings plans and trading bots — now AlphaLOX</p>
-        <p class="hl">Crypto trading with SEPA deposits &amp; withdrawals</p>
+        <div class="pic"><img src="img/addup.jpg" alt="AddUp crypto trading platform homepage" width="1440" height="900" loading="lazy"></div>
+        <span class="type">01 / Crypto</span>
+        <h3>AddUp</h3>
+        <p class="muted">Cryptocurrency trading platform</p>
+        <p class="hl">Live markets for BTC, ETH, SOL and more</p>
       </article>
       <article class="case">
-        <div class="pic"><img src="img/bober.jpg" alt="Bober barbershop CRM homepage" width="1440" height="900" loading="lazy"></div>
-        <span class="type">02 / CRM</span>
-        <h3>Bober</h3>
-        <p class="muted">Booking and CRM built for barbershops</p>
+        <div class="pic"><img src="img/crm.jpg" alt="Booking and CRM system homepage" width="1440" height="900" loading="lazy"></div>
+        <span class="type">02 / SaaS</span>
+        <h3>CRM</h3>
+        <p class="muted">Booking and CRM system for barbershops</p>
         <p class="hl">Online booking, Telegram reminders, client cards &amp; payroll</p>
       </article>
       <article class="case">
-        <div class="pic"><img src="img/getcaptions.jpg" alt="GetCaptions AI video subtitles homepage" width="1440" height="900" loading="lazy"></div>
-        <span class="type">03 / AI SaaS</span>
-        <h3>GetCaptions</h3>
-        <p class="muted">Automatic, animated subtitles for videos</p>
-        <p class="hl">AI transcription in 100+ languages</p>
+        <div class="pic"><img src="img/formgong.jpg" alt="Formgong form-to-Telegram service homepage" width="1440" height="900" loading="lazy"></div>
+        <span class="type">03 / Telegram · SaaS</span>
+        <h3>Formgong</h3>
+        <p class="muted">Every website form submission delivered to Telegram and email</p>
+        <p class="hl">Works with WordPress, Tilda, Wix, Shopify and plain HTML</p>
       </article>
       <article class="case">
-        <div class="pic blank" role="img" aria-label="Swag.com"><b>swag<span class="red">.</span>com</b></div>
-        <span class="type">04 / E-commerce</span>
-        <h3>Swag.com</h3>
-        <p class="muted">E-commerce platform for custom branded merchandise</p>
-        <p class="hl">Online store, product customization &amp; orders</p>
+        <div class="pic"><img src="img/swiftmail.jpg" alt="SwiftMail AI marketing automation homepage" width="1440" height="900" loading="lazy"></div>
+        <span class="type">04 / AI · Marketing</span>
+        <h3>SwiftMail</h3>
+        <p class="muted">AI marketing automation for websites</p>
+        <p class="hl">Email, SMS, push and popups from one snippet</p>
       </article>
+      <article class="case">
+        <div class="pic"><img src="img/carrierscan.jpg" alt="CarrierScan AI text detector homepage" width="1440" height="900" loading="lazy"></div>
+        <span class="type">05 / AI</span>
+        <h3>CarrierScan</h3>
+        <p class="muted">AI text detector for ChatGPT, Gemini and Claude</p>
+        <p class="hl">Free check in multiple languages, no sign-up</p>
+      </article>
+    </div>
+    <div class="slider-bar">
+      <p class="count" aria-live="polite"><b id="cur">01</b> / <span id="total">05</span></p>
+      <div class="arrows">
+        <button type="button" id="prev" aria-label="Previous project"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+        <button type="button" id="next" aria-label="Next project"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="approach" class="sec">
+<section id="about" class="sec">
   <div class="wrap">
     <div class="sec-head">
       <p class="kicker"><b>03</b>/ About</p>
@@ -319,7 +389,7 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-ite
         <div class="points">
           <div class="point"><span class="n">01</span><div><h3>Security at the core</h3><p class="muted">Payments, wallets and user data are designed to be safe from day one, not patched later.</p></div></div>
           <div class="point"><span class="n">02</span><div><h3>Full cycle, one team</h3><p class="muted">From spec and prototype to code, launch and day-to-day support — the people you talk to write your code.</p></div></div>
-          <div class="point"><span class="n">03</span><div><h3>Experience across markets</h3><p class="muted">Crypto, fintech, e-commerce, CRM and AI products for clients worldwide.</p></div></div>
+          <div class="point"><span class="n">03</span><div><h3>Experience across markets</h3><p class="muted">Crypto, fintech, SaaS, CRM and AI products for clients worldwide.</p></div></div>
         </div>
       </div>
     </div>
@@ -336,7 +406,10 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-ite
   <div class="wrap">
     <div class="sec-head">
       <p class="kicker"><b>04</b>/ Process</p>
-      <div><h2>From idea to launch.</h2></div>
+      <div>
+        <h2>From first call to launch.</h2>
+        <p class="muted">Clear stages, clear decisions and timelines agreed up front.</p>
+      </div>
     </div>
     <div class="steps">
       <div class="step"><span class="n">01</span><h3>Discovery</h3><p class="muted">We dig into your goals, users and risks and agree on what success means.</p></div>
@@ -344,36 +417,28 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-ite
       <div class="step"><span class="n">03</span><h3>Build</h3><p class="muted">We develop in short iterations and show you working software every step.</p></div>
       <div class="step"><span class="n">04</span><h3>Launch &amp; Scale</h3><p class="muted">We launch, monitor and keep improving the product as it grows.</p></div>
     </div>
+    <div class="note"><b>+</b><p class="muted"><strong style="color:#fff">Technologies we work with:</strong> Python, JavaScript, PHP, MySQL, React, Django, Node.js, Laravel, Symfony, Magento, Vue.js — and whatever your product already runs on.</p></div>
+  </div>
+  <div class="marquee" aria-hidden="true">
+    <div class="track">
+      <span>Python</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>React</span><span>Django</span><span>Node.js</span><span>Laravel</span><span>Symfony</span><span>Magento</span><span>Vue.js</span>
+      <span>Python</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>React</span><span>Django</span><span>Node.js</span><span>Laravel</span><span>Symfony</span><span>Magento</span><span>Vue.js</span>
+    </div>
   </div>
 </section>
 
-<section id="stack" class="sec">
+<section id="contact" class="band">
   <div class="wrap">
-    <div class="sec-head">
-      <p class="kicker"><b>05</b>/ Stack</p>
-      <div><h2>Technologies we work with.</h2></div>
-    </div>
-  </div>
-  <div class="marquee" aria-label="Python, JavaScript, PHP, MySQL, React, Django, Node.js, Laravel, Symfony, Magento, Vue.js">
-    <div class="track" aria-hidden="true">
-      <span>Python</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>React</span><span>Django</span><span>Node.js</span><span>Laravel</span><span>Symfony</span><span>Magento</span><span>Vue.js</span>
-      <span>Python</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>React</span><span>Django</span><span>Node.js</span><span>Laravel</span><span>Symfony</span><span>Magento</span><span>Vue.js</span>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="sec">
-  <div class="wrap cta">
     <div>
-      <p class="kicker"><b>06</b>/ Contact</p>
-      <h2>Let’s talk about <span class="red">your project</span></h2>
-      <p class="lead muted">Tell us what you want to build — we’ll come back with a plan, an estimate and clear next steps.</p>
+      <p class="kicker"><b>05</b>/ Contact</p>
+      <h2>Let’s talk about your project.</h2>
+      <p class="lead">Tell us what you want to build — we’ll come back with a plan, an estimate and clear next steps.</p>
       <div class="btns" style="margin-top:32px">
-        <a class="btn btn-red" href="mailto:nmy@santinel.me">Email us
+        <a class="btn btn-dark" href="mailto:nmy@santinel.me">Email us
           <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M7 17 17 7M7 7h10v10"/></svg>
         </a>
-        <a class="btn btn-out" href="https://wa.me/380932637515" target="_blank" rel="noopener">WhatsApp</a>
-        <a class="btn btn-out" href="https://t.me/inemyrovsk" target="_blank" rel="noopener">Telegram</a>
+        <a class="btn btn-white" href="https://wa.me/380932637515" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn btn-white" href="https://t.me/inemyrovsk" target="_blank" rel="noopener">Telegram</a>
       </div>
     </div>
     <div>
@@ -385,14 +450,70 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-ite
   </div>
 </section>
 
+<section id="faq" class="sec" style="border-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker"><b>06</b>/ FAQ</p>
+      <div>
+        <h2>Good to know before we start.</h2>
+        <div class="faq">
+          <details>
+            <summary><span class="n">01</span>What kind of projects do you take on?<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+            <p class="muted">Websites and web apps, Telegram bots and Mini Apps, crypto exchanges (DEX and CEX) and fintech payment systems, including SEPA. If your idea is close to one of these, we’re happy to talk.</p>
+          </details>
+          <details>
+            <summary><span class="n">02</span>How does a project start?<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+            <p class="muted">Send us a message by email, WhatsApp or Telegram. We’ll have a short call about your goals, then come back with a plan, an estimate and the next steps.</p>
+          </details>
+          <details>
+            <summary><span class="n">03</span>Do you work with clients outside Ukraine?<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+            <p class="muted">Yes. We work remotely with clients worldwide and communicate in English.</p>
+          </details>
+          <details>
+            <summary><span class="n">04</span>Can you take over an existing project?<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+            <p class="muted">Yes. We start by reviewing the code and architecture, tell you honestly what we find, and then agree on how to move forward.</p>
+          </details>
+          <details>
+            <summary><span class="n">05</span>Do you support the product after launch?<svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></summary>
+            <p class="muted">Yes. We can monitor, fix and keep developing the product after release, so it keeps working as your business grows.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 </main>
 
 <footer>
   <div class="wrap">
     <a href="#top" class="logo" aria-label="Back to top"><b><span class="red">N</span>MY</b><small>AGENCY</small></a>
+    <nav aria-label="Footer"><a href="#services">Services</a><a href="#work">Portfolio</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
     <span>© 2026 NMY Agency · Software development since 2014</span>
   </div>
 </footer>
 
+<a class="tg" href="https://t.me/inemyrovsk" target="_blank" rel="noopener" aria-label="Message us on Telegram">
+  <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M21.9 4.3 18.6 20c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.2-8.3c.4-.4-.1-.6-.6-.2L6.1 13.6 1.2 12c-1.1-.3-1.1-1.1.2-1.6L20.5 3c.9-.3 1.7.2 1.4 1.3z"/></svg>
+</a>
+
+<script>
+// portfolio slider: arrows scroll one card, counter follows the first visible card
+const s = document.getElementById('slider'), cards = s.children;
+const step = () => cards[0].offsetWidth + parseFloat(getComputedStyle(s).columnGap);
+document.getElementById('total').textContent = String(cards.length).padStart(2, '0');
+document.getElementById('prev').onclick = () => s.scrollBy({ left: -step() });
+document.getElementById('next').onclick = () => s.scrollBy({ left: step() });
+const sync = () => {
+  const i = Math.round(s.scrollLeft / step());
+  document.getElementById('cur').textContent = String(i + 1).padStart(2, '0');
+  document.getElementById('prev').disabled = s.scrollLeft < 4;
+  document.getElementById('next').disabled = s.scrollLeft + s.clientWidth >= s.scrollWidth - 4;
+};
+s.addEventListener('scroll', sync, { passive: true });
+addEventListener('resize', sync);
+sync();
+document.querySelectorAll('.menu nav a').forEach(a => a.onclick = () => a.closest('details').open = false);
+</script>
 </body>
 </html>
