@@ -190,6 +190,16 @@ footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:spac
 .next p{margin-top:6px}
 .next img{border-radius:10px;border:1px solid var(--line)}
 
+footer .imprint{flex-basis:100%;margin:0;font-size:13px;line-height:1.5}
+footer a{text-underline-offset:3px}
+
+/* privacy notice */
+.legal{max-width:760px;padding-top:56px;padding-bottom:96px}
+.legal h1{font-size:clamp(2.2rem,5vw,3.2rem);font-weight:900}
+.legal h2{margin-top:40px;font-size:1.3rem}
+.legal p{margin-top:12px;color:#333}
+.legal p.muted{color:var(--muted)}
+
 /* 404 */
 .err{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:24px;min-height:100vh}
 .err .btns{margin:0;justify-content:flex-start}
