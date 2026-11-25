@@ -52,8 +52,9 @@ header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);-webkit
 .links a:hover{color:var(--red)}
 .nav-r{display:flex;align-items:center;gap:6px}
 .nav .btn{min-height:44px;padding:0 18px}
-.lang{display:grid;place-items:center;min-width:44px;height:44px;border-radius:8px;font:700 15px/1 var(--head);text-decoration:none}
-.lang:hover{color:var(--red)}
+.lang{display:grid;place-items:center;width:40px;height:44px;border-radius:8px}
+.lang svg{width:28px;height:20px;border-radius:3px;box-shadow:0 0 0 1px rgba(0,0,0,.15);transition:transform .15s}
+.lang:hover svg{transform:scale(1.1)}
 .menu{display:none;position:relative}
 .menu summary{list-style:none;display:grid;place-items:center;width:44px;height:44px;border-radius:8px;cursor:pointer}
 .menu summary::-webkit-details-marker{display:none}
@@ -230,7 +231,6 @@ footer a{text-underline-offset:3px}
 @media (max-width:860px){
   .links{display:none}
   .menu{display:block}
-  .nav-r>.lang{display:none}  /* no room on phones: the language link sits in the menu and the footer */
 }
 @media (max-width:700px){
   .cases{grid-template-columns:1fr;gap:40px}
@@ -248,6 +248,13 @@ footer a{text-underline-offset:3px}
   .stats{grid-template-columns:1fr}
   .form{padding:22px}
   .btns .btn{width:100%}
+}
+@media (max-width:420px){
+  .logo small{display:none}  /* room for the flag, the button and the menu */
+}
+@media (max-width:360px){
+  .nav-r{gap:4px}
+  .nav .btn{padding:0 12px}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
