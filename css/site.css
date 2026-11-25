@@ -52,9 +52,9 @@ header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);-webkit
 .links a:hover{color:var(--red)}
 .nav-r{display:flex;align-items:center;gap:6px}
 .nav .btn{min-height:44px;padding:0 18px}
-.lang{display:grid;place-items:center;width:40px;height:44px;border-radius:8px}
-.lang svg{width:28px;height:20px;border-radius:3px;box-shadow:0 0 0 1px rgba(0,0,0,.15);transition:transform .15s}
-.lang:hover svg{transform:scale(1.1)}
+.lang{display:inline-flex;align-items:center;gap:7px;height:40px;padding:0 13px 0 10px;border:1.5px solid #cfcfca;border-radius:999px;font:800 13px/1 var(--head);letter-spacing:.06em;text-decoration:none;white-space:nowrap;transition:border-color .15s,background .15s}
+.lang:hover{border-color:var(--ink);background:var(--soft)}
+.lang svg{flex:none;width:22px;height:16px;border-radius:3px;box-shadow:0 0 0 1px rgba(0,0,0,.12)}
 .menu{display:none;position:relative}
 .menu summary{list-style:none;display:grid;place-items:center;width:44px;height:44px;border-radius:8px;cursor:pointer}
 .menu summary::-webkit-details-marker{display:none}
