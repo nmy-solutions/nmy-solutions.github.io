@@ -1,4 +1,5 @@
-@font-face{font-family:"Montserrat";font-style:normal;font-weight:700 900;font-display:swap;src:url(../fonts/montserrat-latin.woff2) format("woff2")}
+@font-face{font-family:"Montserrat";font-style:normal;font-weight:700 900;font-display:swap;src:url(../fonts/montserrat-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:"Montserrat";font-style:normal;font-weight:700 900;font-display:swap;src:url(../fonts/montserrat-cyrillic.woff2) format("woff2");unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}
 
 :root{
   --bg:#fff;
@@ -18,7 +19,7 @@ html{scroll-behavior:smooth;scroll-padding-top:84px;-webkit-text-size-adjust:100
 body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 var(--body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{max-width:100%;height:auto;display:block}
 a{color:inherit}
-h1,h2,h3{font-family:var(--head);font-weight:800;line-height:1.1;letter-spacing:-.02em;margin:0;text-wrap:balance}
+h1,h2,h3{font-family:var(--head);font-weight:800;line-height:1.1;letter-spacing:-.02em;margin:0;text-wrap:balance;overflow-wrap:break-word}
 p{text-wrap:pretty}
 p{margin:0}
 [hidden]{display:none!important}
@@ -51,6 +52,8 @@ header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);-webkit
 .links a:hover{color:var(--red)}
 .nav-r{display:flex;align-items:center;gap:6px}
 .nav .btn{min-height:44px;padding:0 18px}
+.lang{display:grid;place-items:center;min-width:44px;height:44px;border-radius:8px;font:700 15px/1 var(--head);text-decoration:none}
+.lang:hover{color:var(--red)}
 .menu{display:none;position:relative}
 .menu summary{list-style:none;display:grid;place-items:center;width:44px;height:44px;border-radius:8px;cursor:pointer}
 .menu summary::-webkit-details-marker{display:none}
@@ -135,6 +138,7 @@ header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);-webkit
 .direct p{font-size:.95rem;color:#b9b9be}
 .direct div{display:flex;flex-wrap:wrap;gap:12px;margin-top:12px}
 .direct .btn{min-height:46px;padding:0 20px}
+.direct div+p{margin-top:12px}
 .form{display:grid;gap:16px;padding:32px;background:#fff;color:var(--ink);border-radius:var(--r)}
 .form label{display:grid;gap:7px;font:700 14px/1.3 var(--head)}
 .form label small{font-weight:600;color:var(--muted)}
@@ -142,6 +146,7 @@ header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);-webkit
 .form textarea{resize:vertical}
 .form input:focus,.form textarea:focus{outline:none;border-color:var(--ink);box-shadow:0 0 0 3px rgba(225,29,42,.25)}
 .form .btn{width:100%;margin-top:4px}
+.form[aria-busy="true"] .btn{opacity:.6;pointer-events:none}
 .form-msg{padding:12px 14px;border-radius:8px;background:#e9f8ee;color:#135c2e;font-size:15px;font-weight:600}
 .form-bad{background:#fdecec;color:#8a1111}
 .note{font-size:13px;color:#6b6b70;text-align:center}
@@ -196,6 +201,7 @@ footer a{text-underline-offset:3px}
 /* privacy notice */
 .legal{max-width:760px;padding-top:56px;padding-bottom:96px}
 .legal h1{font-size:clamp(2.2rem,5vw,3.2rem);font-weight:900}
+:lang(uk) .legal h1{font-size:clamp(1.8rem,5vw,3.2rem)}  /* «конфіденційності» is one long word */
 .legal h2{margin-top:40px;font-size:1.3rem}
 .legal p{margin-top:12px;color:#333}
 .legal p.muted{color:var(--muted)}
@@ -224,6 +230,7 @@ footer a{text-underline-offset:3px}
 @media (max-width:860px){
   .links{display:none}
   .menu{display:block}
+  .nav-r>.lang{display:none}  /* no room on phones: the language link sits in the menu and the footer */
 }
 @media (max-width:700px){
   .cases{grid-template-columns:1fr;gap:40px}
@@ -233,6 +240,7 @@ footer a{text-underline-offset:3px}
 }
 @media (max-width:600px){
   .wrap{padding-left:16px;padding-right:16px}
+  .nav{gap:12px}  /* the header was 1-3px too wide on 320px phones */
   .hero{padding:64px 0 72px}
   .sec,.contact{padding:72px 0}
   .sec-head{margin-bottom:40px}

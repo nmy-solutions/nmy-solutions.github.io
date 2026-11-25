@@ -1,45 +1,78 @@
 <!doctype html>
-<html lang="en">
+<html lang="uk">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NMY Agency — Custom software development with fixed prices</title>
-<meta name="description" content="Software built around your needs: a personal approach, fixed prices, you own all the code, ready in 30 days, safe hosting and 100% money back if we don’t fulfill what we agreed.">
+<title>NMY Agency — програмне забезпечення на замовлення</title>
+<meta name="description" content="Фіксована ціна, готовий продукт за 30 днів і 100% повернення коштів, якщо не виконаємо узгоджене. Увесь код належить вам.">
 <link rel="canonical" href="https://nmy.agency/">
-<meta property="og:title" content="NMY Agency — Custom software development">
-<meta property="og:description" content="Software built around your needs. Fixed prices, you own all the code, and 100% money back if we don’t deliver the agreed plan.">
+<link rel="alternate" hreflang="uk" href="https://nmy.agency/">
+<link rel="alternate" hreflang="en" href="https://nmy.agency/en/">
+<link rel="alternate" hreflang="x-default" href="https://nmy.agency/">
+<meta property="og:title" content="NMY Agency — робимо системи для вашого бізнесу">
+<meta property="og:description" content="Особистий підхід, фіксована ціна і система, яка повністю належить вам. Готова за 30 днів.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="NMY Agency">
+<meta property="og:locale" content="uk_UA">
 <meta property="og:url" content="https://nmy.agency/">
-<meta property="og:image" content="https://nmy.agency/img/og.jpg">
+<meta property="og:image" content="https://nmy.agency/img/og-uk.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#ffffff">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Arial Black,Arial,sans-serif' font-size='34' font-weight='900' fill='%23ff1a1a'%3EN%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="/favicon.png">
+<link rel="preload" href="fonts/montserrat-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="css/site.css?v=20261123">
+<link rel="stylesheet" href="css/site.css?v=20261125">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "WebSite",
+ "name": "NMY Agency",
+ "alternateName": [
+  "NMY",
+  "nmy.agency"
+ ],
+ "url": "https://nmy.agency/"
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "Organization",
+ "@id": "https://nmy.agency/#organization",
+ "name": "NMY Agency",
+ "alternateName": [
+  "NMY",
+  "nmy.agency"
+ ],
+ "url": "https://nmy.agency/",
+ "logo": "https://nmy.agency/favicon.png"
+}
+</script>
 </head>
 <body>
 
 <header>
   <div class="wrap nav">
     <a href="#top" class="logo"><b><span class="red">N</span>MY</b><small>AGENCY</small></a>
-    <nav class="links" aria-label="Main">
-      <a href="#results">Results</a>
-      <a href="#process">Process</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+    <nav class="links" aria-label="Головне меню">
+      <a href="#results">Кейси</a>
+      <a href="#process">Процес</a>
+      <a href="#about">Про нас</a>
+      <a href="#contact">Контакти</a>
     </nav>
     <div class="nav-r">
-      <a class="btn btn-dark" href="#contact">Get started</a>
+      <a class="lang" href="/en/" hreflang="en" lang="en" title="English">EN</a>
+      <a class="btn btn-dark" href="#contact">Почати</a>
       <details class="menu">
-        <summary aria-label="Menu"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></summary>
-        <nav aria-label="Mobile">
-          <a href="#results">Results</a>
-          <a href="#process">Process</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+        <summary aria-label="Меню"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></summary>
+        <nav aria-label="Мобільне меню">
+          <a href="#results">Кейси</a>
+          <a href="#process">Процес</a>
+          <a href="#about">Про нас</a>
+          <a href="#contact">Контакти</a>
+          <a href="/en/" hreflang="en" lang="en">English</a>
         </nav>
       </details>
     </div>
@@ -50,12 +83,13 @@
 
 <section class="hero">
   <div class="wrap">
-    <p class="kicker">Software development</p>
-    <h1>We build software based on <span class="hl">your<svg viewBox="0 0 300 24" preserveAspectRatio="none" aria-hidden="true"><path d="M5 17C70 7 190 3 295 12" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"/></svg></span> needs.</h1>
-    <p class="lead">A personal approach, a fixed price and software you fully own, ready in 30 days.</p>
+    <p class="kicker">Розробка програмного забезпечення</p>
+    <h1>Робимо системи для <span class="hl">вашого<svg viewBox="0 0 300 24" preserveAspectRatio="none" aria-hidden="true"><path d="M5 17C70 7 190 3 295 12" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"/></svg></span> бізнесу.</h1>
+    <p class="lead">Особистий підхід, фіксована ціна і система, яка повністю належить вам. Готова за 30 днів.</p>
     <div class="btns">
-      <a class="btn btn-red" href="#contact">Start a project</a>
-      <a class="link" href="#results">See customer results</a>
+      <a class="btn btn-red" href="#contact">Почати проєкт</a>
+      <a class="btn btn-out" href="https://t.me/inemyrovsk?text=%D0%92%D1%96%D1%82%D0%B0%D1%8E%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BE%D0%B1%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%D1%82%D0%B8%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82." target="_blank" rel="noopener">Написати в Telegram</a>
+      <a class="link" href="#results">Подивитися кейси</a>
     </div>
   </div>
 </section>
@@ -63,16 +97,16 @@
 <section id="offer" class="sec dark">
   <div class="wrap">
     <div class="sec-head">
-      <p class="kicker"><b>01</b> / What you get</p>
-      <h2>Clear terms. No surprises.</h2>
+      <p class="kicker"><b>01</b> / Що ви отримуєте</p>
+      <h2>Зрозумілі умови. Без сюрпризів.</h2>
     </div>
     <div class="cards">
-      <div class="card"><b>Personal</b><h3>A personalized approach for each client</h3><p>We learn how your business works and build for it, not from a template.</p></div>
-      <div class="card"><b>Fixed</b><h3>Fixed prices</h3><p>You know the full price before we start. Anything new gets its own fixed price first.</p></div>
-      <div class="card"><b>100% yours</b><h3>You own all the software</h3><p>The code, the accounts and the domain belong to you.</p></div>
-      <div class="card"><b>30 days</b><h3>Your custom software in 30 days</h3><p>Once you approve the plan, a working product is in your hands within 30 days.</p></div>
-      <div class="card"><b>Safe</b><h3>Safe and stable hosting</h3><p>We help you host your app safely, so it stays fast and online.</p></div>
-      <div class="card hot"><b>Money back</b><h3>100% money-back guarantee</h3><p>We fulfill your request as agreed in the plan, or you get 100% of your money back.</p></div>
+      <div class="card"><b>Особисто</b><h3>Особистий підхід до кожного клієнта</h3><p>Ми вивчаємо, як працює ваш бізнес, і будуємо саме для нього, а не за шаблоном.</p></div>
+      <div class="card"><b>Фіксовано</b><h3>Фіксована ціна</h3><p>Ви знаєте повну ціну до початку роботи. Усе нове спершу отримує окрему фіксовану ціну.</p></div>
+      <div class="card"><b>100% ваше</b><h3>Усе, що ми зробимо, належить вам</h3><p>Код, акаунти й домен оформлені на вас.</p></div>
+      <div class="card"><b>30 днів</b><h3>Ваша система за 30 днів</h3><p>Після того як ви затвердите план, за 30 днів ви отримаєте готовий продукт.</p></div>
+      <div class="card"><b>Безпечно</b><h3>Безпечний і стабільний хостинг</h3><p>Допомагаємо безпечно розмістити ваш застосунок, щоб він працював швидко й залишався доступним.</p></div>
+      <div class="card hot"><b>Гроші назад</b><h3>Гарантія повернення 100% коштів</h3><p>Ми виконуємо все, що узгоджено в плані, або повертаємо вам 100% коштів.</p></div>
     </div>
   </div>
 </section>
@@ -80,26 +114,26 @@
 <section id="results" class="sec">
   <div class="wrap">
     <div class="sec-head">
-      <p class="kicker"><b>02</b> / Customer results</p>
-      <h2>Real products, live today.</h2>
-      <p>Open a project to see what it does.</p>
+      <p class="kicker"><b>02</b> / Кейси</p>
+      <h2>Справжні продукти, які працюють сьогодні.</h2>
+      <p>Відкрийте проєкт, щоб побачити, що він уміє.</p>
     </div>
     <div class="cases">
       <a class="case" href="cases/addup.html">
         <div class="pic"><img src="img/cases/addup-1-720.webp" srcset="img/cases/addup-1-720.webp 720w, img/cases/addup-1.webp 1440w" sizes="(min-width:1200px) 570px, (min-width:700px) 46vw, 92vw" alt="" width="1440" height="900" loading="lazy"></div>
-        <span class="type">Crypto · Web &amp; mobile</span><h3>AddUp</h3><p>Crypto trading platform with web and mobile apps</p><span class="more">View case →</span>
+        <span class="type">Крипто · Веб і мобільні</span><h3>AddUp</h3><p>Платформа для торгівлі криптовалютою: вебверсія та мобільні застосунки</p><span class="more">Дивитися кейс →</span>
       </a>
       <a class="case" href="cases/swag.html">
         <div class="pic"><img src="img/cases/swag-1-720.webp" srcset="img/cases/swag-1-720.webp 720w, img/cases/swag-1.webp 1440w" sizes="(min-width:1200px) 570px, (min-width:700px) 46vw, 92vw" alt="" width="1440" height="765" loading="lazy"></div>
-        <span class="type">E-commerce</span><h3>Swag.com</h3><p>Platform for custom branded merchandise</p><span class="more">View case →</span>
+        <span class="type">Електронна комерція</span><h3>Swag.com</h3><p>Платформа брендованого мерчу для компаній</p><span class="more">Дивитися кейс →</span>
       </a>
       <a class="case" href="cases/crm.html">
         <div class="pic"><img src="img/cases/crm-1-720.webp" srcset="img/cases/crm-1-720.webp 720w, img/cases/crm-1.webp 1440w" sizes="(min-width:1200px) 570px, (min-width:700px) 46vw, 92vw" alt="" width="1440" height="900" loading="lazy"></div>
-        <span class="type">CRM · Booking</span><h3>CRM</h3><p>Booking and CRM system for barbershops</p><span class="more">View case →</span>
+        <span class="type">CRM · Онлайн-запис</span><h3>CRM</h3><p>Онлайн-запис і CRM для барбершопів</p><span class="more">Дивитися кейс →</span>
       </a>
       <a class="case" href="cases/formgong.html">
         <div class="pic"><img src="img/cases/formgong-1-720.webp" srcset="img/cases/formgong-1-720.webp 720w, img/cases/formgong-1.webp 1440w" sizes="(min-width:1200px) 570px, (min-width:700px) 46vw, 92vw" alt="" width="1440" height="900" loading="lazy"></div>
-        <span class="type">Telegram · SaaS</span><h3>Formgong</h3><p>Website forms delivered to Telegram and email</p><span class="more">View case →</span>
+        <span class="type">Telegram · SaaS</span><h3>Formgong</h3><p>Заявки з форм сайту — в Telegram і на пошту</p><span class="more">Дивитися кейс →</span>
       </a>
     </div>
   </div>
@@ -108,34 +142,34 @@
 <section id="process" class="sec">
   <div class="wrap">
     <div class="sec-head">
-      <p class="kicker"><b>03</b> / Development cycle</p>
-      <h2>From your idea to working software.</h2>
-      <p>You approve each step before we start the next one.</p>
+      <p class="kicker"><b>03</b> / Етапи роботи</p>
+      <h2>Від вашої ідеї до системи, яка працює.</h2>
+      <p>Ви затверджуєте кожен крок, перш ніж ми почнемо наступний.</p>
     </div>
     <ol class="steps">
-      <li><h3>Requirements</h3><p>We listen and write down exactly what your business needs.</p></li>
-      <li><h3>Solution</h3><p>We find the best solution, and you approve it: what we build, the price and the date.</p></li>
-      <li><h3>Build</h3><p>We build it and show you working progress every week.</p></li>
-      <li><h3>Launch</h3><p>We put it live on safe, stable hosting, in your name.</p></li>
-      <li><h3>Support</h3><p>We keep it running and make changes as your business grows, each at a price agreed first.</p></li>
+      <li><h3>Потреби</h3><p>Ми слухаємо й записуємо, що саме потрібно вашому бізнесу.</p></li>
+      <li><h3>Рішення</h3><p>Ми знаходимо найкраще рішення, а ви його затверджуєте: що робимо, ціну й дату.</p></li>
+      <li><h3>Розробка</h3><p>Ми розробляємо й щотижня показуємо вам, що вже працює.</p></li>
+      <li><h3>Запуск</h3><p>Запускаємо на безпечному, стабільному хостингу, оформленому на вас.</p></li>
+      <li><h3>Підтримка</h3><p>Стежимо, щоб усе працювало, і вносимо зміни, коли ваш бізнес росте. Ціну кожної зміни узгоджуємо наперед.</p></li>
     </ol>
-    <div class="after"><a class="btn btn-red" href="#contact">Start with step 1</a></div>
+    <div class="after"><a class="btn btn-red" href="#contact">Почати з кроку 1</a></div>
   </div>
 </section>
 
 <section id="about" class="sec soft">
   <div class="wrap about">
     <div>
-      <p class="kicker"><b>04</b> / About</p>
-      <h2>You talk directly to the people who lead your project.</h2>
+      <p class="kicker"><b>04</b> / Про нас</p>
+      <h2>Ви спілкуєтеся напряму з тими, хто веде ваш проєкт.</h2>
     </div>
     <div class="about-text">
-      <p>NMY is named after our founder, Ivan Nemyrovskyi, a DevOps engineer and AWS Certified Solutions Architect – Associate. He plans every project and leads the senior developers from Ukraine who build it.</p>
-      <p>No sales managers in between. We plan the architecture first, so your product is stable on launch day and easy to grow.</p>
+      <p>NMY названо на честь засновника, Івана Немировського, DevOps-інженера і сертифікованого фахівця AWS (AWS Certified Solutions Architect – Associate). Він планує кожен проєкт і керує досвідченими розробниками з України, які його створюють.</p>
+      <p>Жодних менеджерів з продажу між нами. Спершу ми плануємо архітектуру, тому ваш продукт стабільно працює з дня запуску і його легко розвивати.</p>
       <div class="stats">
         <div><b>AWS</b><span>Certified Solutions Architect – Associate</span></div>
-        <div><b>Senior</b><span>Developers from Ukraine</span></div>
-        <div><b>3</b><span>Languages: English, Ukrainian and Russian</span></div>
+        <div><b>Досвідчені</b><span>Розробники з України</span></div>
+        <div><b>3</b><span>Мови: англійська, українська та російська</span></div>
       </div>
     </div>
   </div>
@@ -144,37 +178,38 @@
 <section id="contact" class="contact dark">
   <div class="wrap">
     <div>
-      <p class="kicker"><b>05</b> / Contact us</p>
-      <h2>Tell us what you need.</h2>
+      <p class="kicker"><b>05</b> / Контакти</p>
+      <h2>Розкажіть, що вам потрібно.</h2>
       <ul class="perks">
-        <li>A short call about your goals</li>
-        <li>A fixed price and a date</li>
-        <li>No obligation</li>
+        <li>Короткий дзвінок про ваші цілі</li>
+        <li>Фіксована ціна й дата</li>
+        <li>Без зобов’язань</li>
       </ul>
       <div class="direct">
-        <p>Or write to us directly:</p>
+        <p>Або напишіть нам напряму:</p>
         <div>
-          <a class="btn btn-out" href="https://wa.me/380932637515" target="_blank" rel="noopener">WhatsApp</a>
-          <a class="btn btn-out" href="https://t.me/inemyrovsk" target="_blank" rel="noopener">Telegram</a>
+          <a class="btn btn-out" href="https://t.me/inemyrovsk?text=%D0%92%D1%96%D1%82%D0%B0%D1%8E%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BE%D0%B1%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%D1%82%D0%B8%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82." target="_blank" rel="noopener">Telegram</a>
+          <a class="btn btn-out" href="https://wa.me/380932637515?text=%D0%92%D1%96%D1%82%D0%B0%D1%8E%21%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%BE%D0%B1%D0%B3%D0%BE%D0%B2%D0%BE%D1%80%D0%B8%D1%82%D0%B8%20%D0%BF%D1%80%D0%BE%D1%94%D0%BA%D1%82." target="_blank" rel="noopener">WhatsApp</a>
         </div>
+        <p>Telegram: @inemyrovsk</p>
       </div>
     </div>
     <form class="form" action="https://formgong.com/submit" method="POST">
       <input type="hidden" name="access_key" value="fk_bKtJuNZFhDrxris7Mav7Y2JN">
-      <input type="hidden" name="_lang" value="en">
-      <label>Your name<input type="text" name="name" required autocomplete="name" enterkeyhint="next" placeholder="John Smith"></label>
+      <input type="hidden" name="_lang" value="uk">
+      <label>Ваше ім’я<input type="text" name="name" required autocomplete="name" enterkeyhint="next" placeholder="Олена Коваленко"></label>
       <!-- name="email" matches the field set up in Formgong; it holds the phone number -->
-      <label>Phone number<input type="tel" name="email" required autocomplete="tel" inputmode="tel" enterkeyhint="next" placeholder="+1 555 123 4567"></label>
-      <label><span>About your project <small>(optional)</small></span><textarea name="message" rows="3" placeholder="What would you like to build?"></textarea></label>
+      <label>Номер телефону<input type="tel" name="email" required autocomplete="tel" inputmode="tel" enterkeyhint="next" placeholder="+380 67 123 45 67"></label>
+      <label><span>Про ваш проєкт <small>(необов’язково)</small></span><textarea name="message" rows="3" placeholder="Що ви хочете зробити?"></textarea></label>
       <!-- spam trap, hidden inline so it stays invisible even before CSS loads -->
       <div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden"><input name="botcheck" tabindex="-1" autocomplete="off"></div>
-      <button type="submit" class="btn btn-red">Send request</button>
+      <button type="submit" class="btn btn-red">Надіслати заявку</button>
       <div role="status">
-        <p class="form-msg" data-fg-success hidden>Thank you! We’ve got your request and will contact you soon.</p>
+        <p class="form-msg" data-fg-success hidden>Дякуємо! Ми отримали вашу заявку і скоро зв’яжемося з вами.</p>
         <p class="form-msg form-bad" data-fg-error hidden></p>
       </div>
-      <p class="note">We use your details only to reply. No spam. <a href="privacy.html">Privacy notice</a></p>
-      <p class="fg-credit"><a href="https://formgong.com/en/?ref=badge&amp;utm_source=badge&amp;utm_medium=form&amp;utm_campaign=designer" target="_blank" rel="noopener">Form by Formgong</a></p>
+      <p class="note">Ваші дані потрібні нам лише для відповіді. Жодного спаму. <a href="privacy.html">Політика конфіденційності</a></p>
+      <p class="fg-credit"><a href="https://formgong.com/uk/?ref=badge&amp;utm_source=badge&amp;utm_medium=form&amp;utm_campaign=designer" target="_blank" rel="noopener">Форма від Formgong</a></p>
     </form>
   </div>
 </section>
@@ -184,8 +219,8 @@
 <footer>
   <div class="wrap">
     <a href="#top" class="logo"><b><span class="red">N</span>MY</b><small>AGENCY</small></a>
-    <span>© 2026 NMY Agency · <a href="privacy.html">Privacy notice</a></span>
-    <p class="imprint">Ivan Nemyrovskyi, individual entrepreneur registered in Georgia · <a href="mailto:ivan.nemyrovskyi@nmy.agency">ivan.nemyrovskyi@nmy.agency</a></p>
+    <span>© 2026 NMY Agency · <a href="privacy.html">Політика конфіденційності</a> · <a href="/en/" hreflang="en" lang="en">English</a></span>
+    <p class="imprint">Іван Немировський, індивідуальний підприємець, зареєстрований у Грузії · <a href="mailto:ivan.nemyrovskyi@nmy.agency">ivan.nemyrovskyi@nmy.agency</a></p>
   </div>
 </footer>
 
